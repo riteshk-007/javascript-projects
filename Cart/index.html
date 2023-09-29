@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Add To Cart</title>
+</head>
+
+<body>
+    <div class = "container">
+    <div class = "card" id="iteml">
+          <img src = "bg.jpg" alt="">
+          <div class ="title">product1</div>
+          <div>
+            <label> quantity : </label>
+            <select>
+                 <option> 1 </option>
+                 <option> 2 </option>
+                 <option> 3 </option>
+                 <option> 4 </option>
+           </select>
+          </div>
+          <button onclick="addToCart(iteml)">Add To Cart</button>
+          </div>
+  
+          <div class = "card" id ="item2">
+            <img src = "img10.png" alt="">
+            <div class ="title">prodcut2</div>
+            <div>
+              <label> quantity : </label>
+              <select>
+                   <option> 1 </option>
+                   <option> 2 </option>
+                   <option> 3 </option>
+                   <option> 4 </option>
+             </select>
+            </div>
+             <button onclick="addToCart(item2)">Add To Cart</button>
+            </div>
+  </div>
+
+
+  <div class="cart" id="cart">
+    <div class="title">CART</div><hr/>
+    <div id="title"></div>
+  </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+

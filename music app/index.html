@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Music app</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="title">chammak challo</h2>
+        <div class="imgdiv">
+            <img src="/poster/chammak challo.jpeg" id="img1">
+        </div>
+        <div class="musicRange">
+            <div class="slide">
+                <div class="dot"></div>
+            </div>
+        </div>
+        <div class="control">
+            <span class="pre"><i class="fa-solid fa-backward"></i></span>
+            <span class="playPause"><i class="fa-solid fa-play"></i></span>
+            <span class="nxt"><i class="fa-solid fa-forward"></i></span>
+        </div>
+        <audio src="/music/music1.mp3"></audio>
+        <ion-icon name="menu" class="menu" onclick="menu()"></ion-icon>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="#">01</a></li>
+                <li><a href="#">02</a></li>
+                <li><a href="#">03</a></li>
+                <li><a href="#">04</a></li>
+                <li><a href="#">05</a></li>
+                <li><a href="#">06</a></li>
+                <li><a href="#">07</a></li>
+                <li><a href="#">08</a></li>
+                <li><a href="#">09</a></li>
+                <li><a href="#">10</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

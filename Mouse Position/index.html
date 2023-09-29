@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Position</title>
+</head>
+
+<style>
+    *{
+        margin: 0;padding: 0;box-sizing: border-box;
+    }
+    body {
+    height: 100vh;
+    background: rgb(11, 96, 176);
+    position: relative;
+    font-family: sans-serif;
+    }
+    #output{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 20px 50px rgba(4, 1, 22, 0.12);
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        max-width: 500px;
+        padding: 20px 30px;
+        background: #fff;
+    }
+    #output div {
+        margin: 0px 10px;
+    }
+    span {
+        color: #0c58af;
+    }
+</style>
+<body>
+    <div id="output">
+        Move the mouse
+    </div>
+
+
+
+
+    <script>
+        const output = document.getElementById('output');
+        window.addEventListener('mousemove', (e) => {
+            let xPos = e.clientX;
+            let yPos = e.clientY;
+            output.innerHTML = `<div><span>X: </span>${xPos}px</div><div><span>Y: </span>${yPos}px</div>`;
+        })
+
+    </script>
+</body>
+</html>

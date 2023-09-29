@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: lightcyan;
+}
+.btn{
+    background: transparent;
+    color: #000;
+    font-weight: 700;
+    padding: 7px 20px;
+    font-size: 18px;
+    border: 3px solid #000;
+    cursor: pointer;
+    position: relative;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    background: transparent;
+    border: 3px solid #000;
+    padding: 7px 15px;
+    width: 47px;
+    height: 16px;
+    left: 13px;
+    top: 7px;
+    transition: all 0.3s;
+
+}
+.btn:hover::before{
+    left: 0;
+    top: 0;
+}

@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    margin-top: 20px;
+    padding: 10px 25px;
+    cursor: pointer;
+    box-shadow: 0px 0px 28px rgb(0,0,0,0.3);
+    border-radius: 20px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>simple 404 page using Html & css</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Opps! Page not found.</h2>
+        <div class="emoji">
+            <div class="eye1"></div>
+            <div class="eye2"></div>
+            <div class="smile"></div>
+        </div>
+        <h1>404</h1>
+        <p>We can't find the page you're looking for.</p>
+        <a href="#" id="btn">Go back home</a>
+    </div>
+    
+
+
+    <script>
+        var btn = document.getElementById('btn');
+        btn.onclick = function (){
+            btn.style.borderRadius = "100%";
+            btn.style.padding = "2px";
+            btn.innerHTML = "✔";
+            btn.style.background ="#12AD2B"
+            btn.style.width = "60px";
+            btn.style.height = "60px";
+            btn.style.display = "flex";
+            btn.style.alignItems = "center";
+            btn.style.justifyContent = "center";
+            btn.style.fontSize = "30px";
+            btn.style.boxShadow = "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px"
+        };
+    </script>
+</body>
+</html>

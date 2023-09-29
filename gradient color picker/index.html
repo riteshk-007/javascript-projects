@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="gradient.png">
+    <script src="script.js" defer></script>
+    <title>gradient color picker</title>
+</head>
+<body>
+    <div class="container">
+        <div class="col"></div>
+        <div class="column">
+            <div class="wrapper">
+                <select>
+                    <option value="to right">Right</option>
+                    <option value="to bottom">Bottom</option>
+                    <option value="to left">Left</option>
+                    <option value="to top">Top</option>
+                    <option value="to right top">Right Top</option>
+                    <option value="to right bottom">Right Bottom</option>
+                    <option value="to left bottom">Left Bottom</option>
+                    <option value="to left top">Left Top</option>
+                </select>
+            </div>
+            <div class="wrapper">
+                <input type="color" value="#cd11e6">
+                <input type="color" value="#3973c9">
+            </div>
+        </div>
+        <div class="column">
+            <textarea disabled>background: linear-gradient(to left, #cd11e6, #3973c9);</textarea>
+        </div>
+        <div class="column">
+            <div class="wrapper">
+                <button class="refresh">Refresh Colors</button>
+            </div>
+            <div class="wrapper">
+                 <button class="copy">Copy Color</button>
+                </div>
+        </div>
+    </div>
+    
+</body>
+</html>

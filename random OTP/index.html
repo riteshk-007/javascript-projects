@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="otp.png">
+    <title>Random OTP Generator</title>
+</head>
+<body>
+    <h1 style="font-family: sans-serif;position: absolute; top: 50%;left: 50%; transform: translate(-50%, -50%);">Check Console</h1>
+    <script>
+            const generateOTP = () =>{
+                const length = 6;
+                let otp = '';
+
+                for (let i = 0; i <length; i++) {
+                    otp += Math.floor(Math.random() * 10);
+
+                    
+                }
+                return otp;
+            }
+            console.log(generateOTP());
+    </script>
+</body>
+</html>

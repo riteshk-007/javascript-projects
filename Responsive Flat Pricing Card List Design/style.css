@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, rgb(187, 250, 187), rgb(253, 210, 217), rgb(172, 172, 240));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+    /* border: 1px solid #000; */
+    flex-wrap: wrap;
+}
+.card{
+    width: 350px;
+    min-width: 350px;
+    /* border: 1px solid #000; */
+    height: 470px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+    position: relative;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 20px;
+}
+.price-tag{
+    height: 150px;
+    width: 100%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.price{
+    width: 110px;
+    height: 110px;
+    /* border: 1px solid #000; */
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #fff;
+    color: rgb(250, 247, 247);
+    margin-bottom: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.price:nth-child(1){
+    background: #ffd768;
+    box-shadow:0px 0px 0px 4px #ffd768;
+}
+.price p{
+    font-size: 30px;
+    margin-right: 4px;
+    margin-bottom: 25px;
+}
+.price h2{
+    font-size: 57px;
+}
+
+.name{
+    position: absolute;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    top: 30%;
+}
+.name::before{
+    position: absolute;
+    content: "";
+    width: 85px;
+    height: 3px;
+    background: #ffd768;
+    top: 50%;
+    right: -97px;
+}
+.name::after{
+    position: absolute;
+    content: "";
+    width: 85px;
+    height: 3px;
+    background: #ffd768;
+    top: 50%;
+    left: -97px;
+}
+.info{
+    height: 220px;
+    width: 100%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.info .detail{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+} 
+.info .detail span{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    color: #555;
+    width: 80%;
+}
+.info .detail span::selection{
+    color: #fff;
+    background: #ffd768;
+}
+.info .detail  li{
+    list-style: none;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 23px;
+    color: green;
+    padding: 9px 0px;
+}
+.btn{
+    height: 100px;
+    width: 100%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn a{
+    text-decoration: none;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px 70px;
+    cursor: pointer;
+    border-radius: 30px;
+    background: #fff;
+    border: 2px solid #ffd768;
+    color: #ffd768;
+    transition: all 0.4s;
+}
+.container .card:nth-child(2) .price{
+    background: #a36af3;
+    box-shadow:0px 0px 0px 4px #a36af3;
+}
+.container .card:nth-child(2) .name::before{
+    background: #a36af3;
+}
+.container .card:nth-child(2) .name::after{
+    background:#a36af3;
+}
+.container .card:nth-child(2) .btn a{
+    background: #a36af3;
+    border: 2px solid #a36af3;
+    color: #fff;
+}
+.container .card:nth-child(3) .price{
+    background: #43ef92;
+    box-shadow:0px 0px 0px 4px #43ef92;
+}
+.container .card:nth-child(3) .name::before{
+    background:#43ef92;
+}
+.container .card:nth-child(3) .name::after{
+    background:#43ef92;
+}
+.container .card:nth-child(3) .btn a{
+    background: #fff;
+    border: 2px solid #43ef92;
+    color: #43ef92;
+}
+
+.container .card:nth-child(1) .btn a:hover{
+    border: 2px solid #fff;
+    background: #ffd768;
+    color: #fff;
+}
+.container .card:nth-child(2) .btn a:hover{
+    border: 2px solid #a36af3;
+    background: #fff;
+    color:#a36af3;
+}
+.container .card:nth-child(3) .btn a:hover{
+    border: 2px solid #fff;
+    background: #43ef92;
+    color: #fff;
+}
+.container .card:nth-child(2) .reco{
+    width: 200px;
+    height: 40px;
+    background: #a36af3;
+    position: absolute;
+    transform: rotate(308deg);
+    top: 48px;
+    left: -53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    /* background: red; */
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    overflow: hidden;
+}
+.box::before{
+    width: 10px;
+    height: 10px;
+    content: "";
+    background: #634094;
+    position: absolute;
+    left: 114px;
+    top: 0;
+}
+.box::after{
+    width: 10px;
+    height: 10px;
+    content: "";
+    background: #634094;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    top: 149px;
+}

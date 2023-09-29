@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(116, 162, 192);
+}
+
+.card{
+    width: 250px;
+    height: 320px;
+    /* border: 1px solid #000; */
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    border: 5px solid rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s;
+}
+.box{
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    top: 100%;
+    background: rgba(255,255,255,0.2);
+    transition: all 0.38s;
+}
+.card:hover .box{
+    top: -10px;
+}
+.card:hover img{
+    transform: scale(1.5);
+}
+p{
+    color: #fff;
+    padding: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+button{
+    background: rgb(62, 138, 39);
+    padding: 7px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px #555 solid;
+    margin-left: 25px;
+    color: #fff;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+}
+button:active{
+    transform: translateY(1px);
+}

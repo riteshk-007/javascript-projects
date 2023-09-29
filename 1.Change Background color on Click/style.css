@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.box{
+    width: 95%;
+    height: 500px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    width: 92%;
+    margin-top: 5px;
+    border: none;
+    height: 100px;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(243, 189, 123);
+    transition: all 0.4s;
+}
+button:active{
+    transform: translateY(2px);
+    box-shadow: 5px 10px 15px rgba(0,0,0,0.2);
+}

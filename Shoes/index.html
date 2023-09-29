@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/image/logo-icon.png">
+  <title>Shoes</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <ul>
+      <li>
+        <a href="#second">
+          <div class="logo">
+            <img src="/image/logo.png" alt="">
+            <span class="span1 span">Shoes</span>
+          </div>
+
+        </a>
+      </li>
+      <li>
+        <a href="#second">
+          <div class="logo">
+            <ion-icon name="home-outline"></ion-icon>
+            <span class="span2 span">Home</span>
+          </div>
+
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="logo">
+            <ion-icon name="male-outline"></ion-icon>
+            <span class="span3 span">Men</span>
+          </div>
+
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="logo">
+            <ion-icon name="female-outline"></ion-icon>
+            <span class="span4 span">Women</span>
+          </div>
+
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="logo">
+            <ion-icon name="information-circle-outline"></ion-icon>
+            <span class="span5 span">About</span>
+          </div>
+
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="logo">
+            <ion-icon name="settings-outline"></ion-icon>
+            <span class="span6 span">Setting</span>
+          </div>
+
+        </a>
+      </li>
+    </ul>
+    <div class="toggle"></div>
+  </div>
+  <section class="first" id="first">
+    <nav>
+      <div class="search">
+        <input type="text" placeholder="search brand name...">
+        <div class="icon">
+          <ion-icon name="search-outline"></ion-icon>
+
+        </div>
+      </div>
+      <div class="cart">
+        <ion-icon name="bag-outline" class="bag"></ion-icon>
+        <span id="number">0</span>
+      </div>
+      <div class="cart_item">
+        <h1>Cart Item</h1>
+        <div class="cart_box"> </div>
+      </div>
+      <div class="navigation">
+        <div class="user">
+          <div class="image">
+            <img src="image/thanos.jpg" alt="">
+          </div>
+          <p class="username">Thanos</p>
+        </div>
+        <div class="menu"></div>
+        <ul class="list">
+          <li><a href="#">
+              <ion-icon name="person-outline"></ion-icon>
+              My Profile
+            </a></li>
+          <li><a href="#">
+              <ion-icon name="notifications-outline"></ion-icon>
+              Notification
+            </a></li>
+          <li><a href="#">
+              <ion-icon name="list-outline"></ion-icon>
+              WishList
+            </a></li>
+          <li><a href="#">
+              <ion-icon name="settings-outline"></ion-icon>
+              Settings
+            </a></li>
+          <li><a href="#">
+              <ion-icon name="help-outline"></ion-icon>
+              Help & Support
+            </a></li>
+          <li><a href="#">
+              <ion-icon name="log-out-outline"></ion-icon>
+              Logout
+            </a></li>
+        </ul>
+      </div>
+
+    </nav>
+  </section>
+  <section class="second" id="second">
+    <div class="text">
+      <h1>What's <br> Your <br>Favourite <br>Shoes..!</h1>
+      <h4>SHOP NOW FOR FAMOUS BRAND</h4>
+    </div>
+    <div class="oval">
+      <img src="image/img3.png" alt="">
+    </div>
+  </section>
+
+    <div class="scroll">
+      <a href="#">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+      </a>
+      </div>
+
+
+  <div class="box">
+    <h1>Best Sellar</h1>
+  </div>
+
+  <section class="third">
+    <!-- <--------item1--------->
+    <div class="item" id="item1">
+      <img src="image/img9.png" alt="">
+      <div class="naam">
+        Shoe 1
+      </div>
+      <span class="span" title="price">&#8377; 1230.00</span>
+      <ion-icon name="heart-outline" class="heart heart1"></ion-icon>
+      <div class="detail">
+        <div class="star">
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star-half"></ion-icon>
+        </div>
+      
+        <div class="size">
+          <button onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- <--------item2--------->
+    <div class="item" id="item2">
+      <img src="image/img8.png" alt="">
+      <div class="naam">
+        Shoe 2
+      </div>
+      <span class="span pese" title="price">&#8377; 1230.00</span>
+      <ion-icon name="heart-outline" class="heart heart2"></ion-icon>
+      <div class="detail">
+        <div class="star">
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star-half"></ion-icon>
+        </div>
+        <div class="size">
+         <button onclick="addToCart(item2)">Add To Cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- <--------item3--------->
+    <div class="item" id="item3">
+      <img src="image/img2.png" alt="">
+       <div class="naam">
+          Shoe 3
+        </div>
+        <span class="span" title="price">&#8377; 1230.00</span>
+      <ion-icon name="heart-outline" class="heart heart3"></ion-icon>
+      <div class="detail">
+        <div class="star">
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star-half"></ion-icon>
+        </div>
+        <div class="size">
+         <button onclick="addToCart(item3)">Add To Cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- <--------item4--------->
+    <div class="item" id="item4">
+      <img src="image/img12.png" alt="">
+       <div class="naam">
+          Shoe 4
+        </div>
+        <span class="span" title="price">&#8377; 1230.00</span>
+      <ion-icon name="heart-outline" class="heart heart4"></ion-icon>
+      <div class="detail">
+        <div class="star">
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star-half"></ion-icon>
+        </div>
+        <div class="size">
+         <button onclick="addToCart(item4)">Add To Cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- <--------item5--------->
+    <div class="item" id="item5">
+      <img src="image/img20.png" alt="">
+       <div class="naam">
+          Shoe 5
+        </div>
+        <span class="span" title="price">&#8377; 1230.00</span>
+      <ion-icon name="heart-outline" class="heart heart5"></ion-icon>
+      <div class="detail">
+        <div class="star">
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star-half"></ion-icon>
+        </div>
+        <div class="size">
+         <button onclick="addToCart(item5)">Add To Cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- <--------item6--------->
+    <div class="item" id="item6">
+      <img src="image/img14.png" alt="">
+       <div class="naam">
+          Shoe 6
+        </div>
+        <span class="span" title="price">&#8377; 1230.00</span>
+      <ion-icon name="heart-outline" class="heart heart6"></ion-icon>
+      <div class="detail">
+        <div class="star">
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star-half"></ion-icon>
+        </div>
+        <div class="size">
+         <button onclick="addToCart(item6)">Add To Cart</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <section class="fourth">
+    <div class="box">
+      <h1>Top Shoes</h1>
+    </div>
+      <div class="slider">
+        <!-- <div class="slid active"> -->
+        <img src="/image/img20.png" alt="">
+        <img src="/image/img19.png" alt="">
+        <img src="/image/img18.png" alt="">
+        <!-- </div> -->
+        <!-- <div class="slid"> -->
+      <img src="/image/img17.png" alt="">
+      <img src="/image/img16.png" alt="">
+      <img src="/image/img15.png" alt="">
+        <!-- </div> -->
+        <!-- <div class="slid"> -->
+      <img src="/image/img14.png" alt="">
+      <img src="/image/img13.png" alt="">
+      <img src="/image/img12.png" alt="">
+        <!-- </div> -->
+        <!-- <div class="slid "> -->
+      <img src="/image/img11.png" alt="">
+      <img src="/image/img8.png" alt="">
+      <img src="/image/img9.png" alt="">
+      <img src="/image/img7.png" alt="">
+      <img src="/image/img6.png" alt="">
+      <img src="/image/img5.png" alt="">
+      <img src="/image/img4.png" alt="">
+      <img src="/image/img3.png" alt="">
+      <img src="/image/img2.png" alt="">
+      <img src="/image/img1.png" alt="">
+        <!-- </div> -->
+      </div>
+      <div class="btn">
+        <button id="back"><ion-icon name="chevron-back-circle-outline"></ion-icon></button>
+        <button id="next"><ion-icon name="chevron-forward-circle-outline"></ion-icon></button>
+      </div>
+    
+  </section>
+<section class="fifth">
+  <div class="box">
+    <h1>Best Deal</h1>
+  </div>
+<div class="boxed">
+  <div class="img">
+<img src="/image/poster1.jpg" alt="">
+  </div>
+  <div class="img1">
+    <img src="/image/poster2.jpg" alt="">
+    <img src="/image/poster3.jpg" alt="">
+  </div>
+</div>
+</section>
+
+<footer>
+  <div class="card">
+    <span>GIFT CARDS</span>
+   <span>PROMOTIONS</span> 
+   <span>FIND A STORE</span> 
+   <span>SIGN UP FOR EMAIL</span> 
+    <span>BECOME A MEMBER</span>
+     <span>SHOE JOURNAL</span>
+    <span> SEND US FEEDBACK</span>
+  </div>
+  <div class="card">
+    <span>GIFT HELP</span>
+   <p>Order Status</p> 
+   <p>Shipping and Delivery</p> 
+   <p>Returns</p> 
+    <p>Payment Options</p>
+     <p>Gift Card Balance</p>
+    <p>Contact Us</p>
+  </div>
+  <div class="card">
+    <span>ABOUT SHOE</span>
+   <p>News</p> 
+   <p>Careers</p> 
+   <p>Investors</p> 
+    <p>Purpose</p>
+     <p>Sustainability</p>
+  </div>
+
+  <div class="icon">
+    <ion-icon name="logo-facebook"></ion-icon>
+    <ion-icon name="logo-instagram"></ion-icon>
+    <ion-icon name="logo-twitter"></ion-icon>
+    <ion-icon name="logo-youtube"></ion-icon>
+  </div>
+</footer>
+
+
+
+  <script src="script.js"></script>
+
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

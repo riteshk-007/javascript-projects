@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: #555;
+}
+.container{
+    width: 98%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid rgb(233, 233, 233); */
+}
+.left{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 8px 0px;
+}
+.input label{
+    background: #000;
+    padding: 8px 5px;
+    width: 100%;
+    display: flex;
+    color: #fff;
+}
+.input label ion-icon{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.input textarea{
+    width: 100%;
+    height: 100%;
+    background: #5e5e5e;
+    outline: none;
+    /* border: none; */
+    font-size: 16px;
+    font-family: revert;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+iframe{
+    width: 98%;
+    border: none;
+    outline: none;
+    height: 95%;
+    background: #fff;
+}
+.right label{
+    background: #000;
+    padding: 8px 5px;
+    width: 98%;
+    display: flex;
+    color: #fff;
+}
+.right label ion-icon{
+    margin-right: 6px;
+    font-size: 20px;
+}
+

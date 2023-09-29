@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="phone.css">
+    <title>Personal Portfolio Website using HTML & CSS</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span>Portfolio</span>
+        </div>
+        <div class="menu">
+            <ion-icon name="menu-outline" class="menu-outline"></ion-icon>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Download cv</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#hire">Hire Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="home">
+        <div class="info">
+            <div class="information">
+                <div class="intro">
+                    Hello, my name is
+                    <br>
+                    <span>Harry</span>
+                    <br>
+                    <label>I'am a Web Developer</label>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non perspiciatis tenetur similique
+                    repellendus omnis officiis eos placeat delectus! Iure, excepturi?</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="person.png" alt="">
+        </div>
+    </section>
+    <section id="about">
+        <div class="box">
+            <img src="me.jpg" alt="">
+        </div>
+        <div class="detail">
+            <span>About Me</span>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quia suscipit assumenda perferendis
+                eligendi sunt reiciendis odit aspernatur, dolor nihil saepe earum quibusdam non illum facere, unde in.
+                Possimus fuga veritatis doloribus nulla fugit corporis aliquam obcaecati, distinctio pariatur harum,
+                quae deserunt officia ipsam inventore blanditiis illo deleniti omnis cumque vitae est illum enim.
+                Accusamus, deserunt hic commodi laudantium optio saepe corporis delectus quasi aspernatur impedit
+                architecto officia, esse dolor.</p>
+
+            <a href="#">Let's Talk</a>
+        </div>
+    </section>
+    <section id="services">
+        <div class="card">
+            <ion-icon name="key-outline"></ion-icon>
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat optio accusamus eveniet, maiores
+                recusandae dolorum iste aut animi architecto alias?</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="card">
+            <ion-icon name="laptop-outline"></ion-icon>
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat optio accusamus eveniet, maiores
+                recusandae dolorum iste aut animi architecto alias?</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="card">
+            <ion-icon name="code-slash-outline"></ion-icon>
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat optio accusamus eveniet, maiores
+                recusandae dolorum iste aut animi architecto alias?</p>
+            <a href="#">Read More</a>
+        </div>
+    </section>
+
+    <section id="hire">
+        <h2>Let Me Get You A Beautiful Website.</h2>
+            <a href="#">Hire Me</a>
+    </section>
+
+<footer>
+    <h1>Harry</h1>
+    <p>For more HTML, CSS, and coding tutorial. please click on the
+        <br>
+        &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp;
+       &nbsp; &nbsp; &nbsp;
+    link below to subscribe to my channel:
+    </p>
+    <div class="icon">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-whatsapp"></ion-icon>
+    </div>
+</footer>
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+
+        let navbar = document.querySelector('.navbar');
+            window.addEventListener("scroll", ()=>{
+                if(window.pageYOffset > 28){
+                    navbar.classList.add("active");
+                }else{
+                    navbar.classList.remove("active");
+                }
+            })
+    </script>
+</body>
+
+</html>

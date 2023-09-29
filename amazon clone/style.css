@@ -1,0 +1,741 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: rgb(234, 237, 237);
+}
+body.active::-webkit-scrollbar{
+    display: none;
+}
+.navbar
+{
+    width: 100%;
+   background-color:rgb(19, 25, 33);
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    user-select: none;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+.brand{
+    width: 130px;
+    border: 1px solid rgb(19, 25, 33);
+    cursor: pointer;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* margin: 0px 10px; */
+    height: 80%;
+    border-radius: 2px;
+}
+.brand:hover{
+    border: 1px solid #fff;
+}
+.brand img{
+    width: 100%;
+}
+.location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* margin: 0px 10px; */
+    width: auto;
+    border: 1px solid rgb(19, 25, 33);
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 5px;
+    height: 80%;
+}
+.location:hover{
+    border: 1px solid #fff;
+}
+.location h5{
+    font-size: 12px;
+    color: #fff;
+    opacity: 0.8;
+    font-weight: 100;
+}
+.location .loco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-transform: capitalize;
+}
+.location h3{
+    font-size: 14px;
+    padding: 0px 4px
+}
+.search-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    position: relative;
+    border: 2px solid #232f3e;
+}
+.search-input select{
+    width: 50px;
+    height: 41px;
+    background-color: rgb(243, 242, 242);
+    border-radius: 3px 0  0 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: -1px;
+    cursor: pointer;
+}
+.input {
+    width: 900px;
+    height: 40px;
+}
+.input input{
+    width: 900px;
+    height: 97%;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+}
+.search-input span{
+    color: #000;
+    background-color: rgb(254, 189, 105);
+    width: 48px;
+    height: 40px;
+    border-radius: 0 3px  3px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+.search-input span:hover{
+    background-color: rgb(233, 172, 92);
+}
+/* .input input :focus .search-input{
+    border : 10px solid  rgb(254, 189, 105);
+} */
+
+.lang{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80px;
+    padding: 10px 4px;
+    border: 1px solid rgb(19, 25, 33);
+    cursor: pointer;
+    border-radius: 2px;
+    height: 80%;
+}
+.lang img{
+    width: 20px;
+}
+.lang span{
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+ 
+    border-radius: 2px;
+}
+.lang:hover{
+    border: 1px solid #fff;
+}
+.lang ion-icon{
+    color: #ccc;
+    font-size: 10px;
+}
+.lang ion-icon{
+    color: #ccc;
+    font-size: 10px;
+}
+.location .cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: auto;
+    /* padding: 10px 4px; */
+    border: 1px solid rgb(19, 25, 33);
+    cursor: pointer;
+    border-radius: 2px;
+    position: relative;
+}
+.location .cart img{
+    width: 35px;
+    color: #fff;
+    transform: rotate(2deg);
+}
+.location .cart span{
+    position: absolute;
+    color: orange;
+    font-weight: bolder;
+    top: -5px;
+    left: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+}
+.location .cart p{
+    color: #fff;
+    padding-left: 5px;
+    font-weight: bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.container{
+    width: 100%;
+    background-color: rgb(35, 47, 62);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    user-select: none;
+}
+.container .location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0px 10px; */
+    width: auto;
+    border: 1px solid rgb(35, 47, 62);
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 5px;
+    height: 85%;
+    position: relative;
+
+}
+.container .location:hover{
+    border: 1px solid #fff;
+}
+.container .location ion-icon{
+    color: #fff;
+    font-size: 25px;
+    padding-right: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+}
+.container .location span{
+    color: #fff;
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    right: 0px;
+    top: 2px;
+    font-size: 17px;
+}
+.container .location span1{
+    color: #fff;
+    width: auto;
+    height: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 13px;
+   text-transform: capitalize;
+   padding:2px 5px;
+   font-weight: 600;
+   position: relative;
+}
+.container .location img{
+    width: 22px;
+    position: absolute;
+    left: 2px;
+    margin: 0px 5px;
+}
+.container .location h5{
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    margin-left:  30px;
+    font-weight: bold;
+}
+.container .location p{
+    color: rgb(252, 252, 252);
+    font-size: 10px;
+    margin-left:  30px;
+
+}
+.container .location .fix{
+    color: #ccc;
+    position: absolute;
+    right: -99px;
+    font-size: 14px;
+}
+.toggle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 19.3%;
+    height: 94%;
+    /* border: 1px solid #000; */
+    background: #fff;
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.toggle.active{
+    opacity: 1;
+    visibility: visible;
+}
+.toggle .user{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: rgb(35, 47, 62);
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    position: absolute;
+    padding-left: 22px;
+    top: 0;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.toggle .user ion-icon{
+    font-size: 30px;
+    margin: 0 6px;
+}
+.toggle .box-inner{
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    height: 100%;
+    padding: 10px;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 48px;
+}
+.toggle .box-inner .box{
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    margin: 5px 0;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+}
+.toggle .box-inner .box:nth-child(1){
+    height: 200px;
+}
+.toggle .box-inner .box:nth-child(3){
+    height: 300px;
+}
+.toggle .box-inner .box:nth-child(4){
+    height: 240px;
+}
+.toggle .box-inner .box:nth-child(5){
+    height: 230px;
+    
+}
+.toggle .box-inner .box span{
+    font-weight: bolder;
+    font-size: 17px;
+    width: 100%;
+    padding-left: 10px;
+    text-transform: capitalize;
+}
+.toggle .box-inner .box ul{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+}
+.toggle .box-inner .box ul li{
+    /* border: 1px solid #000; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    cursor: pointer;
+    padding: 10px;
+    text-transform: capitalize;
+}
+.toggle .box-inner .box ul li a{
+    text-decoration: none;
+    height: 30px;
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+}
+.toggle .box-inner .box ul li:hover{
+    background: rgb(233, 232, 232);
+}
+.toggle-cross{
+    background: rgba(0,0,0, 0.8);
+    width: 80.7vw;
+    z-index: 5;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}
+.toggle-cross.active{
+    opacity: 1;
+    visibility: visible;
+}
+.toggle-cross span{
+    /* border: 1px solid rgb(255, 255, 255); */
+    font-size: 100px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 5px;
+}
+.carousel{
+    display: flex;
+    width: 80vw;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    /* background: #000; */
+    cursor: pointer;
+    overflow: hidden;
+}
+.slider{
+    flex:  0 0 auto;
+    position: relative;
+    margin-right: 30px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    transition: 0.5s;
+    overflow: hidden;
+    user-select: none;
+}
+.slider img{
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+}
+.nxt{
+    position: absolute;
+    top: 11vh;
+    right: 182px;
+    width: 80px;
+    height: 250px;
+    font-size: 50px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+}
+.nxt:focus{
+    border: 2px solid;
+    box-shadow: 1px 0px 1px 2px #fff;
+}
+.pre{
+    position: absolute;
+    top: 11vh;
+    left: 182px;
+    width: 80px;
+    height: 250px;
+    font-size: 50px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.pre:focus{
+    border: 2px solid;
+    box-shadow: 1px 0px 1px 2px #fff;
+}
+.nxt ion-icon::before,.pre ion-icon::before{
+    content: "";
+    box-shadow: 0px 10px rgba(255, 255, 255, 1);
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    background: #fff;
+    width: 2px;
+    height: 12px;
+    transform: rotate(46deg);
+}
+.nxt ion-icon::before{
+        top: 43%;
+        left: 47%;
+}
+.pre ion-icon::before{
+    top: 15%;
+    left: 61%;
+}
+.nxt ion-icon::after,.pre ion-icon::after{
+    content: "";
+    box-shadow: 0px 10px rgba(255, 255, 255, 1);
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    background: #fff;
+    width: 2px;
+    height: 12px;
+    transform: rotate(-46deg);
+}
+.nxt ion-icon::after{
+    top: 15%;
+    left: 33%;
+}
+.pre ion-icon::after{
+    top: 44%;
+    left: 46%;
+}
+.container-box{
+    width: 80vw;
+    height: 50vh;
+    /* border: 1px solid #000; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: -360px;
+}
+.second{
+    margin-top: 0px;
+
+}
+.container-box .sm-box{
+    width: 350px;
+    /* border: 1px solid #000; */
+    margin: auto;
+    height: 420px;
+    background: #fff;
+    box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+
+}
+.container-box .sm-box  span{
+    font-weight: bolder;
+    font-size: 20px;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-top: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.container-box .sm-box .ex-sm-box{
+    width: 100%;
+    height: 80%;
+    /* border: 1px solid #000; */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -5px;
+}
+
+.container-box .sm-box .ex-sm-box .child-box{
+    width: 45%;
+    height: 45%;
+    margin: auto;
+    cursor: pointer;
+    /* border: 1px solid #000; */
+}
+.container-box .sm-box .ex-sm-box .child-box img{
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+}
+.container-box .sm-box .ex-sm-box .child-box p{
+    font-size: 12px;
+    margin-top: -8px;
+}
+.container-box .sm-box .ex-sm-box a{
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(54, 93, 126);
+}
+.container-box .sm-box .ex-sm-box a:hover{
+    color: rgb(201, 88, 40);
+    text-decoration:underline;
+} 
+.roll{
+    position: relative;
+    width: 80vw;
+    margin: auto;
+}
+.roll span{
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    z-index: 2;
+}
+.roll span a{
+    font-size: 14px;
+    margin-left: 10px;
+    color: rgb(54, 93, 126);
+    text-decoration: none;
+}
+.roll span a:hover{
+    color: rgb(201, 88, 40);
+    text-decoration:underline;
+} 
+.card-container{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: visible;
+    /* justify-content: center; */
+    margin:  0 auto;
+    scroll-behavior: smooth;
+    position: relative;
+    height: 350px;
+    background: #fff;
+  
+    /* border: 1px solid #000; */
+}
+.card-container::-webkit-scrollbar{
+    display: none;
+}
+.card{
+    position: relative;
+    min-width: 240px;
+    width: 240px;
+    height: 270px;
+    overflow: hidden;
+    transition: .5s;
+    background: rgb(250, 250, 250);
+    margin-right:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    cursor: pointer;
+}
+.card img{
+    width: auto;
+    height: 73%;
+}
+.card a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    background: rgb(204, 13, 77);
+    cursor: pointer;
+    margin: 2px 0;
+}
+.card p{
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 2px 0;
+}
+.card h5{
+    color: #000;
+    font-weight: bold;
+    font-size: 10px;
+}
+.btn{
+    position: relative;
+    width: 50px;
+    height: 100px;
+    background: #ffffff;
+    font-size: 25px;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+    border-radius: 4px;
+}
+.next {
+    position: absolute;
+    right: 0;
+    top: 115px;
+    z-index: 1;
+}
+.back {
+    position: absolute;
+    left: 0;
+    top: 115px;
+    z-index: 1;
+}
+.btn:focus{
+    box-shadow: 0px 0px 0px 0px rgb(0, 0, 0);
+    border: 3px solid rgb(112, 159, 180);
+}
+.btn ion-icon::after{
+    box-shadow: 0px 0px #000;
+}
+.btn ion-icon::before{
+    box-shadow: 0px 0px #000;
+}
+.home{
+    width: 55vw;
+    margin: 25px  auto;
+    cursor: pointer;
+}
+.home img{
+    width: 100%;
+    height: 100%;
+}
+.backtotop{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(35, 47, 62);
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none;
+}
+.backtotop:hover{
+    background: rgb(48, 63, 82);
+}

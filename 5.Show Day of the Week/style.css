@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(206, 182, 45);
+}
+.box{
+    width: 500px;
+    height: 200px;
+    border: 10px solid green;
+    background: rgb(166, 243, 52);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.week,.date{
+    font-size: 40px;
+}

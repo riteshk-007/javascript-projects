@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JQuery</title>
+</head>
+<body>
+    
+<!-- <div class="box" style="width:300px; height:300px; border: 1px solid #000;"></div> -->
+<!-- <form action="#formid" id="formid">
+<label for="name">Name :</label>
+
+<input type="text" id="name">
+<br>
+<label for="class"> Class :</label>
+<input type="text" id="class">
+<br>
+<label for="country">country :</label>
+<select name="country" id="country">
+    <option value="" id="india">India</option>
+    <option value="" id="pakistan">Pakistan</option>
+    <option value="" id="england">England</option>
+</select>
+<button>Submit</button>
+</form> -->
+<!-- <div class="class">hello</div> -->
+
+<!-- <h2 class="hel">hello</h2> -->
+<script src="jquery.js"></script>
+    <script>
+$(document).ready(function(){
+
+        //<--------- targeting DOM Element with ID, Class & Tag-------------->
+
+        // a) select by id : $("#IdName");
+        // a) select by class name : $(".ClassName");
+        // a) select by Tag name : $("TagName");
+
+
+    // <-----------------Advance Selectors -------------------->
+
+        // $("*");
+        // $("ul li");
+        // $(".abc, .xyz");
+        // $("h1, div, p");
+        // $("p:first");
+        // $("p:last");
+        // $("p:even");
+        // $("p:odd");
+
+
+        // eq()  = equation();
+        // gt()  = greater than();
+        // lt()  = lower than();
+
+// <------------------Mouse Events----------------------------> 
+    
+    // click()
+    // dbclick()
+    // (right click)=> contextmenu()
+    // mouseenter();
+    // mouseleave();
+
+    // $('id,class,tag').event(function(){ some code here... })
+
+
+    // <--------------KeyboardEvent---------------->
+
+    // keypress()
+    // keydown()
+    // keyup()
+
+    // $('body').keypress(function(){
+    //     $(this).css('background-color','red')
+    // })
+    // $('body').keydown(function(){
+    //     $(this).css('background-color','blue')
+    // })
+    // $('body').keyup(function(){
+    //     $(this).css('background-color','yellow')
+    // })
+
+
+// <-------------------form Event--------------------->
+
+    // focus()         change()
+    // blur()          select()
+    // submit()
+
+
+
+    // $("#name").focus(function(){
+    //     $(this).css('background-color', 'lime')
+    // });
+    // $("#class").blur(function(){
+    //     $(this).css('background-color', '')
+    // });
+    // $('#country').change(function(){
+    //     $(this).css('background-color','pink')
+    // });
+    // $('#name').select(function(){
+    //     $(this).css('background-color','yellow')
+    // });
+    // $('#formid').submit(function(){
+    //     console.log('form submitted');
+    //     alert('form submitted');
+    // })
+
+
+ // <----------------- Window Event ----------------------> 
+
+// resize()            scroll()
+
+// $(window).scroll(function(){
+//     console.log("scrooooooling..........")
+// })
+// $(window).resize(function(){
+//     console.log("resizeee..........")
+// })
+
+
+// <-------------get methods---------------------> 
+
+    // text()          html()
+    // attr()          val()
+
+    // var a = $('body').html();
+    // console.log(a);
+
+    // var b = $('body').text();
+    // console.log(b);
+
+
+    // var c = $('body').attr('class');
+    // console.log(c);
+
+
+    // $('#formid').submit(function(){
+    //     var name = $('#name').val();
+    //     alert("Hello" + " "+ name)
+    // })
+
+    // <----------------set methods------------------------>
+            // text()        ye text change krne ke liye hai;
+            // html()        ye html me change krne ke liye hai;
+            // attr()        isse attribute lga skte hai;
+            // val()         ye value set kr deta hai;
+
+    //   text()
+            // $('h2').text('hello ritesh kumar');
+
+        // html()
+        // $('h2').html('<h4> hello</h4>')
+
+    // Attr()
+
+    
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(43deg, rgb(203, 203, 245), rgb(222, 231, 235));
+    background-repeat: no-repeat;
+    /* filter:; */
+}
+
+a{
+    text-decoration: none;
+    margin: 0px 50px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+ion-icon{
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid #000; */
+    border-radius: 100%;
+    padding: 6px;
+    z-index: 1;
+    background: #fff;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.5) , inset 0px 2px 4px rgba(0,0,0,0.3);
+}
+span{
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #000; */
+    padding: 15px;
+    position: absolute;
+    top: 1px;
+    left: 20px;
+    border-radius: 20px 50px 50px 20px;
+    background: rgb(238, 238, 238);
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.5) , inset 0px 2px 4px rgba(255, 255,255,0.5);
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+}
+.facebook:hover *{
+    background: #2b5998;
+    color: #fff;
+}
+.facebook{
+    animation: wave 3s infinite alternate;
+}
+.twitter{
+    animation: wave 3s infinite alternate;
+    animation-delay: 1s;
+}
+.instagram{
+    animation: wave 3s infinite alternate;
+    animation-delay: 1.5s;
+}
+.youtube{
+    animation: wave 3s infinite alternate;
+    animation-delay: 2s;
+}
+.whatsapp{
+    animation: wave 3s infinite alternate;
+    animation-delay: 2.3s;
+}
+.twitter:hover *{
+    background: #00acee;
+    color: #fff;
+}
+.instagram:hover *{
+    background: #f33252;
+    color: #fff;
+}
+.youtube:hover *{
+    background: #FF0000;
+    color: #fff;
+}
+.whatsapp:hover *{
+    background: #25D366;
+    color: #fff;
+}
+a:hover span{
+    opacity: 1;
+    visibility: visible;
+}
+
+@keyframes wave {
+    0%{
+        transform: translateY(10px);
+    }
+    25%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    75%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}

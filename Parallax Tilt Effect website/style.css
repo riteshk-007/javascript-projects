@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+html::-webkit-scrollbar{
+    width: 6px;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: #359381;
+}
+html::-webkit-scrollbar-track{
+    background-color: #003329;
+}
+body{
+    overflow-x: hidden;
+    min-height: 100vh;
+    background: #f9f9f9;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    justify-content: flex-start;
+}
+.logo{
+    font-size: 2em;
+    color: #359381;
+    pointer-events: none;
+    margin-right: 500px;
+}
+.navigation a{
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0px 20px;
+    font-weight: 600;
+}
+.navigation a:hover, .navigation a.active{
+    background-color: #359381;
+    color: #fff;
+}
+.parallax{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#text{
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 4px 4px rgba(0,0,0,0.5);
+}
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+.sec{
+    position: relative;
+    background: #003329;
+    padding: 100px;
+}
+.sec h2{
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.sec p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="gallery.png">
+    <title>Drag Img Box</title>
+</head>
+<style>
+    div{
+        width: 200px;
+        height: 200px;
+        background: rgb(0, 173, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        cursor: move;
+        transform: translate(-50%, -50%);
+    }
+    div img{
+        width: 80%;
+        border: 1px solid #000;
+        object-fit: cover;
+    }
+    input{
+        width: 85px;
+    }
+</style>
+<body>
+
+    <div>
+        <!-- <img src="user-image-with-black-background.png" alt="">
+        <input type="file" name="" id=""> -->
+
+    </div>
+    
+
+
+    <script>
+        // change box img 
+                    // const image = document.querySelector('img'),
+                    // input = document.querySelector('input');
+
+                    // input.addEventListener('change', ()=>{
+                    //     image.src = URL.createObjectURL(input.files[0])
+                    // })
+
+
+        // drag div 
+        const div  = document.querySelector('div');
+        let offsetX, offsetY;
+
+        const move = (e) =>{
+            div.style.left = `${e.clientX - offsetX}px`;
+            div.style.top = `${e.clientY - offsetY}px`;
+        }
+        div.addEventListener('mousedown', (e)=>{
+            offsetX = e.clientX - div.offsetLeft;
+            offsetY = e.clientY - div.offsetTop;
+            document.addEventListener('mousemove', move)
+        });
+        document.addEventListener('mouseup', ()=>{
+            document.removeEventListener('mousemove', move);
+        })
+
+    </script>
+</body>
+</html>

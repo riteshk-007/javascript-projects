@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(129deg, rgba(157,100,209,0.974477958236659) 11%, rgba(66,192,232,0.951276102088167) 47%, rgba(191,152,215,0.9640231092436975) 81%);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h2{
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+h1{
+    font-size: 100px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p{
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+a{
+    background: orangered;
+    padding: 13px 15px;
+    color: #fff;
+    border-radius: 50px;
+    margin-top: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+a:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in;
+}
+.emoji{
+    width: 240px;
+    height: 240px;
+    /* border: 1px solid #ccc; */
+    margin: 20px;
+    border-radius: 100%;
+    box-shadow:  rgba(223, 205, 43, 0.25) 0px 54px 55px, rgba(231, 220, 59, 0.12) 0px -12px 30px, rgba(214, 231, 57, 0.12) 0px 4px 6px, rgba(248, 245, 64, 0.17) 0px 12px 13px, rgba(245, 212, 67, 0.09) 0px -3px 5px;
+    background: rgb(252, 201, 0);
+    position: relative;
+}
+.eye1{
+    width: 30px;
+    height: 50px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 43px;
+    left: 55px;
+    border-radius: 50%;
+    background: rgb(56, 26, 26);
+}
+.eye2{
+    width: 30px;
+    height: 50px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 43px;
+    right: 55px;
+    border-radius: 50%;
+    background: rgb(56, 26, 26);
+}
+.smile{
+    position: absolute;
+    bottom: 22px;
+    left: 27%;
+    width: 108px;
+    height: 96px;
+    border: solid 5px #000;
+    border-color: #000 transparent transparent transparent;
+    border-radius: 50%/100px 100px 0 0;
+    animation: muh 2s infinite;
+}
+@keyframes muh {
+    to{
+        border-radius: 50%/100px 100px 0 0;
+    }
+    from{
+        border-radius: 10%/10px 10px 5px 0;
+    }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>	Custom Cursor Maker Html Css Javascript</title>
+</head>
+<style>*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        background: #222;
+        cursor: none;
+        overflow: hidden;
+
+    }
+    .cursor{
+        width: 60px;
+        height: 60px;
+        background: transparent;
+        border-radius: 50%;
+        cursor: none;
+        border: 2px solid #fff;
+        position: relative;
+        animation: amin .5s infinite alternate;
+        mix-blend-mode: difference;
+    }
+    @keyframes amin {
+        from{
+            transform: scale(1);
+        }
+        to{
+            transform: scale(.7);
+        }
+    }
+    .cursor::after{
+        content: '';
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background: transparent;
+        border-radius: 50%;
+        border: 8px solid gray;
+        opacity: .5;
+        top: -10px;
+        left: -10px;
+        animation: amin2 .5s infinite alternate;
+    }
+    @keyframes amin2 {
+        from{
+            transform: scale(1);
+        }
+        to{
+            transform: scale(.5);
+        }
+    }
+    span{
+        font-size: 195px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: fantasy;
+    }
+    .expand{
+        animation: amin3 .5s forwards;
+        border: 1px red solid;
+    }
+    @keyframes amin3 {
+        0%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(3);
+        }
+        100%{
+            transform: scale(1);
+            opacity: 0;
+        }
+    }
+</style>
+<body>
+    <div class="cursor"></div>
+    <span>Hello World</span>
+
+
+
+    <script>
+         
+         let cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', e =>{
+            cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;");
+
+            // cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+
+        })
+        document.addEventListener('click', () =>{
+            cursor.classList.add('expand');
+
+            setTimeout(()=>{
+                cursor.classList.remove('expand')
+            }, 500)
+        })
+        document.addEventListener('mouseleave',()=>{
+            cursor.style.display = 'none'
+        })
+    </script>
+</body>
+</html>

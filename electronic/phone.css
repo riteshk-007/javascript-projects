@@ -1,0 +1,331 @@
+@media screen and (max-width:1382px) {
+    #navbar
+    {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #navbar ul
+    {
+        flex-direction: column;
+    }
+    .search
+    {
+        display: block;
+    }
+    
+    .menu
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: block;
+    }
+    .logo
+    {
+        display: contents;
+    }
+    #home h1 
+    {
+        font-size: 25px;
+    }
+    .content
+    {
+        height: 275px;
+    }
+    .content img
+    {
+        width: auto;
+        height: auto;
+    }
+    #order
+    {
+        height: 300px;
+    }
+    .cm
+    {
+        height: 350px;
+    }
+    #box
+    {
+        height: 300px;
+    }
+    .card1
+    {
+        width: 200px;
+        height:210px
+    }
+    .card1::before
+    {
+        font-size: 15px;
+    }
+    .card2
+    {
+        width: 200px;
+        height:210px
+    }
+    .card2::before
+    {
+        font-size: 15px;
+    }
+    .card3
+    {
+        width: 200px;
+        height:210px
+    }
+    .card3::before
+    {
+        font-size: 15px;
+    }
+    h4 
+    {
+        font-size: 16px;
+    }
+    .fa-brands
+    {
+        font-size: 19px;
+    }
+}
+@media screen and (max-width:1300px){
+    .btn button
+    {
+        width: 120px;
+        height: 40px;
+        font-size: 11px;
+        font-weight: 7000;
+       
+    }
+}
+@media screen and (max-width:1180px) {
+    .btn button
+    {
+        width: 105px;
+        height: 40px;
+        font-size: 9px;
+        font-weight: 10000;
+       
+    }
+}
+@media screen and (max-width:1093px) {
+    .btn button
+    {
+      display: block;
+      margin: 10px;
+    }
+}
+@media screen and (max-width:1072px) {
+    #order
+    {
+        height: 250px;
+    }
+    #box
+    {
+        flex-direction: column;
+        height: auto;
+    }
+    .card1
+    {
+        margin: 20px;
+    }
+    .card1:hover img
+{
+    margin-top: -30px;
+}
+    .card2
+    {
+        margin: 20px;
+    }
+    .card2:hover img
+{
+    margin-top: -30px;
+}
+    .card3
+    {
+        margin: 20px;
+    }
+    .card3:hover img
+{
+    margin-top: -30px;
+}
+}
+@media screen and (max-width:990px) {
+    #order
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .box1
+    {
+        width: 368px;
+        height: 268px;
+    }
+    .box2
+    {
+        width: 368px;
+        height: 268px;
+    }
+    .box3
+    {
+        width: 368px;
+        height: 268px;
+    }
+}
+@media screen and (max-width:757px) {
+    #home h1 
+    {
+        font-size: 18px;
+        padding: 0 100px;
+        margin: auto;
+    }
+}
+@media screen and (max-width:470px) {
+    #box
+    {
+        flex-direction: column;
+        height: auto;
+    }
+    .card1
+    {
+        margin: 15px;
+       height: 150px;
+       width: 130px;
+    }
+    .card2
+    {
+        margin: 15px;
+       height: 150px;
+       width: 130px;
+    }
+    .card3
+    {
+        margin: 15px;
+       height: 150px;
+       width: 130px;
+    }
+    .card1::before
+    {
+        font-size: 11px;
+    }
+    .card1:hover img {
+     margin-top: -25px;
+    }
+    .card2::before
+    {
+        font-size: 11px;
+    }
+    .card2:hover img {
+     margin-top: -25px;
+    }
+    .card3::before
+    {
+        font-size: 11px;
+    }
+    .card3:hover img {
+     margin-top: -25px;
+    }
+
+}
+@media screen and (max-width:405px) {
+    #home h1 
+    {
+        font-size: 15px;
+        padding: 0 100px;
+        margin: auto;
+    }
+    .content {
+        height: 230px;
+    }
+    .box1
+    {
+        width: 320px;
+        height: 268px;
+        border-radius: 30px;
+    }
+    .box2
+    {
+        width: 320px;
+        height: 268px;
+        border-radius: 30px;
+    }
+    .box3
+    {
+        width: 320px;
+        height: 250px;
+        border-radius: 30px;
+    }
+    .cm input 
+    {
+        width: 250px;
+    }
+    .btn1
+    {
+        width: 70px;
+        height: 28px;
+    }
+    .search input
+    {
+        width: 100px;
+    }
+    .search 
+    {
+        width: 100px;
+    }
+}
+@media screen and (max-width:373px) {
+    #home h1
+    {
+        font-size: 13px;
+        padding: 0 100px;
+        margin: auto;
+    }
+}
+@media screen and (max-width:320px) {
+    #home h1
+    {
+        font-size: 10px;
+        padding: inherit;
+        margin: 18px;
+        
+    }
+    .box1
+    {
+        width: 230px;
+        height: 170px;
+    }
+    .box2
+    {
+        width: 230px;
+        height: 170px;
+    }
+    .box3
+    {
+        width: 230px;
+        height: 170px;
+    }
+}
+@media screen and (max-width:320px) {
+    .box1
+    {
+        width: 200px;
+        height: 150px;
+    }
+    .box2
+    {
+        width: 200px;
+        height: 150px;
+    }
+    .box3
+    {
+        width: 200px;
+        height: 150px;
+    }
+    .cm input {
+        width: 200px;
+    }
+    .but {
+        display: flex;
+        padding: 10px;
+    }
+  
+}

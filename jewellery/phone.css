@@ -1,0 +1,322 @@
+@media screen and (max-width:1591px) {
+
+ #navbar
+ {
+     flex-direction: column;
+
+ }
+
+ #navbar ul 
+ {
+     flex-direction: column;
+ }
+ .icon
+ {
+     display: contents;
+ }
+
+}
+@media screen and (max-width:1262px) {
+
+
+    
+    .box1
+    {
+        width: 30%;
+        margin: auto;
+    }
+    .box1 p
+    {
+        padding: 0px 40px;
+        margin: auto;
+        font-size: 19px;
+    }
+
+    .box2
+    {
+        width: 30%;
+        margin: auto;
+    }
+    .box2 p
+    {
+        padding: 0px 40px;
+        margin: auto;
+        font-size: 19px;
+    }
+
+    .box3
+    {
+        width: 30%;
+        margin: auto;
+    }
+    .box3 p
+    {
+        padding: 0px 40px;
+        margin: auto;
+        font-size: 19px;
+    }
+
+
+
+}
+
+@media screen and (max-width:1050px) {
+   
+    .box1 p
+    {
+        padding: 0px 10px;
+        margin: auto;
+        font-size: 13px;
+    }
+
+    .box2 p
+    {
+        padding: 0px 10px;
+        margin: auto;
+        font-size: 13px;
+    }
+    .box3 p
+    {
+        padding: 0px 10px;
+        margin: auto;
+        font-size: 13px;
+    }
+#order
+{
+    flex-wrap: wrap;
+    margin: auto;
+}
+.box4
+{
+    width: 31%;
+    margin:auto;
+    
+}
+.rate
+{
+    width: 100%;
+    height: auto;
+}
+.rate h2
+{
+  font-size: 20px;
+}
+.box4 img
+{
+    width: 95%;
+}
+
+.box5
+{
+    width: 31%;
+    margin:auto;
+}
+.rate
+{
+    width: 100%;
+    height: auto;
+}
+.rate h2
+{
+  font-size: 20px;
+}
+.box5 img
+{
+    width: 95%;
+}
+
+.box6
+{
+    width: 31%;
+    margin:auto;
+}
+.rate
+{
+    width: 100%;
+    height: auto;
+}
+.rate h2
+{
+  font-size: 20px; 
+}
+.box6 img
+{
+    width: 95%;
+}
+
+.box7
+{
+    width: 31%;
+    margin:auto;
+}
+.rate
+{
+    width: 100%;
+    height: auto;
+}
+.rate h2
+{
+  font-size: 20px;
+}
+.box7 img
+{
+    width: 95%;
+}
+
+.box8
+{
+    width: 31%;
+    margin:auto;
+}
+.rate
+{
+    width: 100%;
+    height: auto;
+}
+.rate h2
+{
+  font-size: 20px;
+}
+.box8 img
+{
+    width: 95%;
+}
+
+.box9
+{
+    width: 31%;
+    margin:auto;
+}
+.rate
+{
+    width: 100%;
+    height: auto;
+}
+.rate h2
+{
+  font-size: 20px; 
+}
+.box9 img
+{
+    width: 95%;
+}
+.detail
+{
+    flex-direction: column-reverse;
+}
+.aside img
+{
+    width: 50%;
+}
+
+#home h1
+{
+    font-size: 37px;
+}
+
+#home p
+{
+    font-size: 20px;
+    padding: 9px 46px;
+}
+
+#home
+{
+    height: 100%;
+}
+}
+
+@media screen and (max-width:410px) {
+
+    .content
+    {
+        flex-direction: column;
+    }
+.box1
+{
+  width: 60%;
+margin: 14px auto;
+  height: auto;
+}
+.box1 p 
+{
+    font-size: 10px;
+    margin: auto;
+        padding: 6px 20px
+}
+.box2
+{
+  width: 60%;
+margin: 14px auto;
+  height: auto;
+}
+
+.box2 p 
+{
+    font-size: 10px;
+    margin: auto;
+        padding: 6px 20px
+}
+.box3
+{
+  width: 60%;
+margin: 14px auto;
+  height: auto;
+}
+.box3 p 
+{
+    font-size: 10px;
+    margin: auto;
+        padding: 6px 20px
+}
+ h3
+{
+        font-size: 11px;
+ }
+.aside img
+ {
+     width: 85%;
+    height: auto;
+ }
+.rate h2
+{
+  font-size: 15px; 
+}
+}
+
+@media screen and (max-width:400px) {
+
+    #home h1
+    {
+        font-size: 27px;
+    }
+    
+}
+@media screen and (max-width:380px) {
+
+    .box4
+    {
+        width: 40%;
+    }
+    .box5
+    {
+        width: 40%;
+    }
+    .box6
+    {
+        width: 40%;
+    }
+    .box7
+    {
+        width: 40%;
+    }
+    .box8
+    {
+        width: 40%;
+    }
+    .box9
+    {
+        width: 40%;
+    }
+
+}

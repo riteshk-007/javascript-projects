@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    /* border: 10px solid #000; */
+    background: #03001e;
+    background: linear-gradient(80deg, #ffcbf2, #ec38bc, #7303c0, #03001e);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* overflow: hidden; */
+}
+.container h1{
+    font-size: 300px;
+    color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 20px black;
+}
+.star{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    /* background: linear-gradient(80deg, #ffffffff, #ffffff00); */
+    background: #fff;
+    position: absolute;
+    animation: blink 2s cubic-bezier(0.15, 0.83, 0.66, 1) infinite;
+}
+.shooting-star-1{
+   animation-delay: 0.4s;
+}
+.shooting-star-2{
+    animation-delay: 0.8s;
+}
+.shooting-star-3{
+    animation-delay: 1s;
+}
+.shooting-star-4{
+    animation-delay: 1.5s;
+} 
+@keyframes blink {
+    0% {
+      box-shadow: 0 0 10px 2px white;
+    }
+  
+    50% {
+      box-shadow: 0 0 10px 3px white;
+    }
+  
+    100% {
+      box-shadow: 0 0 10px 0 white;
+    }
+  }

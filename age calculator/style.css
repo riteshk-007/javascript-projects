@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Oswald:wght@300;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(45deg, rgb(134, 238, 92), #7575f0);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 600px;
+    height: 500px;
+    box-shadow: 0px 15px 20px rgba(0,0,0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.gruop-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+}
+.gruop-input span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    font-weight: 600;
+    font-family: 'Abyssinica SIL', serif;
+}
+.gruop-input span input{
+    width: 50px;
+    height: 25px;
+    margin-top: 15px;
+    padding: 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #555;
+}
+button{
+    position: absolute;
+    left: 50%;
+    top: 66%;
+    transform: translate(-50%,-50%);
+    padding: 7px;
+    background: blueviolet;
+    color: #fff;
+    border: 1px solid rgb(1, 81, 255);
+    cursor: pointer;
+    box-shadow: 0px 15px 20px rgba(0,0,0, 0.3);
+    border-radius: 6px;
+}
+.age{
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    /* border: 1px solid #000; */
+    bottom: 0;
+    left: 0;
+    box-shadow: 0px 15px 20px rgba(0,0,0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #252525;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+h1{
+    position: absolute;
+    top: 2px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, rgb(152, 236, 119), #8e8ee4);
+}

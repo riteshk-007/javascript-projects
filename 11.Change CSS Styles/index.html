@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Change CSS Styles</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="pera">
+            <p id="pera">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nemo porro omnis voluptate vitae pariatur
+            modi, qui esse soluta nihil repellat amet dignissimos odit voluptatum deserunt ipsa velit sequi magni.
+            Temporibus nesciunt provident cupiditate? Eaque vero odit quasi quibusdam molestias, nulla facere quae hic
+            sunt tempore optio? Iure veritatis suscipit, praesentium, cupiditate labore quaerat, eveniet dolor fugiat
+            beatae esse doloribus maxime eum reiciendis laborum consectetur reprehenderit omnis natus et in! Nesciunt
+            illum perferendis vel quidem tempore excepturi sed officiis, asperiores aliquam possimus doloremque atque
+            culpa neque cum facilis, consequuntur obcaecati at. Reiciendis laborum quia laboriosam dolor fugiat! Alias,
+            error nulla?</p>
+        </div>
+        <div class="box">
+            <div class="box1">
+                <label for="select" id="font">Font Family :</label>
+                <select  id="select" onchange="change()">
+                    <option value="default">Default</option>
+                    <option value="arial">Arial</option>
+                    <option value="cambria">Cambria</option>
+                    <option value="monospace">Monospace</option>
+                    <option value="georgia">Georgia</option>
+                </select>
+            </div>
+            <div class="box2">
+                <p>Font Size :<span id="size"></span></p> 
+                <input type="range" min="1" max="25" value="12" id="slider">
+            </div>
+            <div class="box3">
+                <p>Font Color :</p>
+                <div class="color">
+                    <button id="blue"></button>
+                    <button id="green"></button>
+                    <button id="red"></button>
+                    <button id="black"></button>
+                </div>
+            </div>
+            <div class="box4">
+                <p>Font Style :</p>
+            <div id="style">
+                <button id="normal">Normal</button>
+                <button id="cursive">Cursive</button>
+                <button id="bold">Bold</button>
+                <button id="light">Light</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

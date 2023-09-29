@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="rgb.png">
+    <title>RGB</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            R <input type="range" id="red" value="0" min="0" max="255" oninput="colors()">
+        </div>
+        <div class="wrapper">
+            G <input type="range" id="green" value="0" min="0" max="255" oninput="colors()">
+        </div>
+        <div class="wrapper">
+            B <input type="range" id="blue" value="0" min="0" max="255" oninput="colors()">
+        </div>
+
+        <span id="output">rgb(0,0,0)</span>
+    </div>
+
+
+    <script>
+        function colors(){
+            var red = document.getElementById('red').value;
+            var green = document.getElementById('green').value;
+            var blue = document.getElementById('blue').value;
+            
+            document.body.style.backgroundColor =
+             'rgb(' + red + ','+ green + ',' + blue +')';
+
+             var output = document.getElementById('output');
+
+             output.innerHTML =  'rgb(' + red + ','+ green + ',' + blue +')'; 
+        }
+
+   
+    </script>
+    
+</body>
+</html>

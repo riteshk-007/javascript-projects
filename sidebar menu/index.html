@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dark/ light Sidebar menu</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <ion-icon name="game-controller-outline"></ion-icon>
+            <h4>Games</h4>
+        </div>
+        <ul>
+            <li><ion-icon name="home-sharp"></ion-icon><a href="#">Home</a></li>
+            <li><ion-icon name="hammer-sharp"></ion-icon><a href="#">Tools</a></li>
+            <li><ion-icon name="alert-circle-sharp"></ion-icon><a href="#">About</a></li>
+            <li><ion-icon name="settings-sharp"></ion-icon><a href="#">Setting</a></li>
+        </ul>
+        <div class="toggle">
+            <label for="dark">
+                <ion-icon name="sunny"></ion-icon>
+               light mode
+            </label>
+            <input type="checkbox" id="dark">
+        </div>
+    </div>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

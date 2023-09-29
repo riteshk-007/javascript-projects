@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>editor</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="input">
+                <label><ion-icon name="logo-html5"></ion-icon> HTML</label>
+                <textarea id="html" onkeyup="run()"></textarea>
+            </div>
+            <div class="input">
+                <label><ion-icon name="logo-css3"></ion-icon> CSS</label>
+                <textarea id="css" onkeyup="run()"></textarea>
+            </div>
+            <div class="input">
+                <label><ion-icon name="logo-javascript"></ion-icon> JAVASCRIPT</label>
+                <textarea id="js" onkeyup="run()"></textarea>
+            </div>
+        </div>
+        <div class="right">
+            <label><ion-icon name="play"></ion-icon> OUTPUT</label>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

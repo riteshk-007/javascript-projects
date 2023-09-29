@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    overflow: hidden;
+}
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid #000; */
+    overflow: hidden;
+    background: linear-gradient(454deg,#6f48ee81, #9d50bbbe);
+}
+header span {
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    margin-right: 80px;
+    font-weight: 500;
+    color: aliceblue;
+    text-shadow: 0px 0px 10px rgba(0,0,0, 1);
+}
+header img{
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.3);
+    cursor: pointer;
+}
+.container{
+    width: 100%;
+    height: 90vh;
+    /* border: 1px solid #000; */
+    background: linear-gradient(45deg, #9d50bb, #6e48ee);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.child-container{
+    width:calc( 100vw - 50vw);
+    height:calc( 90vw - 62vw);
+    /* border: 1px solid #000; */
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.child-container .card{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.child-container .card:nth-child(1) img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.5);
+}
+.child-container .card:nth-child(2){
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    /* background: url(/img/background1.png) no-repeat;
+    background-position: center;
+    opacity: 0.2; */
+}
+.child-container .card:nth-child(2) .name{
+    font-size: 3rem;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+}
+.child-container .card:nth-child(2) .control{
+    width: 100%;
+    height: 50%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.child-container .card:nth-child(2) .control ion-icon{
+    font-size: 25px;
+    background: #000;
+    color: #ff0303;
+    margin: auto 20px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.5);
+    margin-bottom: 50px;
+}
+.child-container .card:nth-child(2) .control .fa-solid{
+    font-size: 25px;
+    background: #000;
+    color: #fff;
+    margin: auto 20px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.5);
+    margin-bottom: 50px;
+}
+.child-container .card:nth-child(2) .control ion-icon:active{
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.8);
+}
+.child-container .card:nth-child(2) .control .fa-solid:active{
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.8);
+}

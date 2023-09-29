@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(43,72,61);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 20%;
+    height: 20%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dots{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: rgb(233, 228, 228);
+    margin: auto 5px;
+    animation: float 0.5s alternate infinite ease;
+}
+@keyframes float {
+    0%{
+        transform: translateY(6px);
+        background: rgb(179, 177, 177);
+    }
+    100%{
+        transform: translateY(0px);
+        background: rgb(233, 228, 228);
+    }
+}
+.dots:nth-child(2){
+    animation-delay: 0.2s;
+}
+.dots:nth-child(3){
+    animation-delay: 0.3s;
+}

@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+button{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+span{
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+    font-weight: 600;
+}

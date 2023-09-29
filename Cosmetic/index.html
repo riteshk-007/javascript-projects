@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.cosmeticworld.com buy any item</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="phone.css">
+    <link rel="icon" href="/image/img_logo.png">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-menu" onclick="mode()" id="bars"> </div>
+        <div class="logo">
+            <a href="#home"> <span>Snetic</span></a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#home" class="active">home</a></li>
+                <li><a href="#category">Product</a></li>
+                <li><a href="#best">best Seller</a></li>
+                <li><a onclick="login()">Account</a></li>
+                <li onclick="dis()"><a><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+            
+        
+        </div>
+
+    </div>
+    <div class="cart" id="cart">
+        <div class="title">CART</div>
+        <hr />
+        <div id="title"></div>
+    </div>
+    <div class="login">
+        <i class="fa-solid fa-circle-xmark"></i>
+        <span>Sign In to Your Account</span>
+        <h3>Email ID</h3>
+        <input type="email" placeholder="username" required="@">
+        <h3>password</h3>
+        <input type="password" placeholder="password" required="3 capital letter">
+        <button type="submit">login</button>
+
+        <a href="#">Forgot your password?</a>
+
+    </div>
+    <section id="home">
+        <div class="box">
+            <div class="pera">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas dolor, a sequi ipsum ullam alias
+                    voluptas repudiandae repellat doloribus debitis ad perferendis iure exercitationem iusto inventore
+                    dolorem maxime? Itaque, quidem ullam tempore nulla cum ex aliquid quibusdam laboriosam? Nemo
+                    temporibus eum vel nihil iure laboriosam officiis, alias voluptas, consequuntur cupiditate quae
+                    aspernatur ut pariatur optio doloribus doloremque perspiciatis nobis. Voluptates, exercitationem.
+                    Incidunt illo explicabo quas sapiente ex voluptatum ipsum aperiam, nulla voluptates eveniet
+                    aspernatur dicta blanditiis! Fugit laudantium unde dolorem quasi aperiam facilis tempore nemo odio
+                    natus laborum! Tempora suscipit debitis deserunt commodi dicta ut soluta eum reiciendis ea facilis
+                    rerum ipsam tempore quibusdam dignissimos nisi.
+                </p>
+
+                <button type="submit" href="#best">Know more</button>
+            </div>
+
+
+            <div class="small_img">
+                <div class="card" id="img1" onclick="change(this)"><img src="/image/img1.png" alt="">
+                    <p><strong>Matte Lipstick</strong></p>
+                </div>
+                <div class="card" id="img2" onclick="change(this)"><img src="/image/img2.png" alt="">
+                    <p>L'Oral Paris Oil Killer Powder </p>
+                </div>
+                <div class="card" id="img3" onclick="change(this)"><img src="/image/img3.png" alt="">
+                    <p>brushworks Blush Brush</p>
+                </div>
+            </div>
+            <div class="main_box">
+                <img src="/image/img1.png" alt="" id="img4">
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <section id="category">
+        <div class="box">
+
+            <div class="card">
+                <div class="img" id="">
+                    <img src="image/img4.png" alt="">
+                </div>
+                <div class="btn">
+                    <input type="button" value="Buy Now" onclick="login()">
+                    <input type="button" value="Add To Cart">
+                </div>
+                <div class="detail">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus rerum unde tempore accusantium
+                    doloremque neque facilis minima culpa fugit quibusdam?
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img" id="">
+                    <img src="image/img6.png" alt="">
+                </div>
+                <div class="btn">
+                    <input type="button" value="Buy Now" onclick="login()">
+                    <input type="button" value="Add To Cart">
+                </div>
+                <div class="detail">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus rerum unde tempore accusantium
+                    doloremque neque facilis minima culpa fugit quibusdam?
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="best">
+        <div class="box">
+            <i class="fa-solid fa-arrow-left" id="left"></i>
+            <i class="fa-solid fa-arrow-right" id="right"></i>
+            <div class="cards active">
+                <div class="img" id="item1"><img src="image/img15.png" alt="">
+                    <h4 class="title">Concealer<br>&#8377;299.00</h4><span>20% off</span>
+                    <div class="btn">
+                        <input type="button" value="Add To Cart" onclick="addToCart(item1)">
+                    </div>
+                    <div class="price">
+                        <h4>Concealer</h4><br><br>
+                        <h5>&#8377; 299.00
+                            <br>
+                            Inclusive of all taxes.
+                        </h5>
+                    </div>
+
+                </div>
+                <div class="img" id="item2"><img src="image/img17.png" alt="">
+                    <h4 class="title">Moisturizer<br>&#8377;239.00</h4><span>30% off</span>
+                    <div class="btn">
+                        <input type="button" value="Add To Cart" onclick="addToCart(item2)">
+                    </div>
+                    <div class="price">
+                        <h4>Moisturizer</h4><br><br>
+                        <h5>&#8377; 239.00
+                            <br>
+                            Inclusive of all taxes.
+                        </h5>
+                    </div>
+                </div>
+                <div class="img" id="item3"><img src="image/img10.png" alt="">
+                    <h4 class="title">Waterproof Mascara<br>&#8377;300.00</h4><span>50% off</span>
+                    <div class="btn">
+                        <input type="button" value="Add To Cart" onclick="addToCart(item3)">
+                    </div>
+                    <div class="price">
+                        <h4>Waterproof Mascara</h4><br><br>
+                        <h5>&#8377; 300.00
+                            <br>
+                            Inclusive of all taxes.
+                        </h5>
+                    </div>
+                </div>
+                <div class="img" id="item4"><img src="image/img13.png" alt="">
+                    <h4 class="title">Peach Face Powder<br>&#8377;349.00</h4><span>35% off</span>
+                    <div class="btn">
+                        <input type="button" value="Add To Cart" onclick="addToCart(item4)">
+                    </div>
+                    <div class="price">
+                        <h4>Peach Face Powder</h4><br><br>
+                        <h5>&#8377; 349.00
+                            <br>
+                            Inclusive of all taxes.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="img" id="item5"><img src="image/img16.png" alt="">
+                    <h4 class="title">Lakme Liquid Foundation<br>&#8377;250.00</h4><span>10% off</span>
+                    <div class="btn">
+                        <input type="button" value="Add To Cart" onclick="addToCart(item5)">
+                    </div>
+                    <div class="price">
+                        <h4>Liquid Foundation</h4><br><br>
+                        <h5>&#8377; 250.00
+                            <br>
+                            Inclusive of all taxes.
+                        </h5>
+                    </div>
+                </div>
+                <div class="img" id="item6"><img src="image/img11.png" alt="">
+                    <h4 class="title">Myglamm Lip Gloss<br>&#8377;447.00</h4><span>45% off</span>
+                    <div class="btn">
+                        <input type="button" value="Add To Cart" onclick="addToCart(item6)">
+                    </div>
+                    <div class="price">
+                        <h4>Myglamm Lip Gloss</h4><br><br>
+                        <h5>&#8377; 447.00
+                            <br>
+                            Inclusive of all taxes.
+                        </h5>
+                    </div>
+                </div>
+                <div class="img" id="item7"><img src="image/img19.png" alt="">
+                    <h4 class="title">blusher brush<br>&#8377;356.00</h4><span>15% off</span>
+                    <div class="btn">
+                        <input type="button" value="Add To Cart" onclick="addToCart(item7)">
+                    </div>
+                    <div class="price">
+                        <h4>blusher brush</h4><br><br>
+                        <h5>&#8377; 356.00
+                            <br>
+                            Inclusive of all taxes.
+                        </h5>
+                    </div>
+                </div>
+                <div class="img" id="item8"><img src="image/img12.png" alt="">
+                    <h4 class="title">Himalaya Lip Balm<br>&#8377;127.00</h4><span>50% off</span>
+                    <div class="btn">
+                        <input type="button" value="Add To Cart" onclick="addToCart(item8)">
+                    </div>
+                    <div class="price">
+                        <h4>Himalaya Lip Balm</h4><br><br>
+                        <h5>&#8377; 127.00
+                            <br>
+                            Inclusive of all taxes.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="img" id="item9"><img src="image/img6.png" alt="">
+                    <h4 class="title">Makeup Setting Spray<br>&#8377;191.00</h4><span>18% off</span>
+                    <div class="btn">
+                        <input type="button" value="Add To Cart" onclick="addToCart(item9)">
+                    </div>
+                    <div class="price">
+                        <h4>Makeup Setting Spray</h4><br><br>
+                        <h5>&#8377; 191.00
+                            <br>
+                            Inclusive of all taxes.
+                        </h5>
+                    </div>
+                </div>
+                <div class="img" id="item10"><img src="image/img7.png" alt="">
+                    <h4 class="title">Highlighter Powder<br>&#8377;478.00</h4><span>20% off</span>
+                    <div class="btn">
+                        <input type="button" value="Add To Cart" onclick="addToCart(item10)">
+                    </div>
+                    <div class="price">
+                        <h4>Highlighter Powder</h4><br><br>
+                        <h5>&#8377; 478.00
+                            <br>
+                            Inclusive of all taxes.
+                        </h5>
+                    </div>
+
+                </div>
+                <div class="img" id="item11"><img src="image/img18.png" alt="">
+                    <h4 class="title">Matte Liquid Lipstick<br>&#8377;250.00</h4><span>40% off</span>
+                    <div class="btn">
+                        <input type="button" value="Add To Cart" onclick="addToCart(item11)">
+                    </div>
+                    <div class="price">
+                        <h4>Matte Liquid Lipstick</h4><br><br>
+                        <h5>&#8377; 250.00
+                            <br>
+                            Inclusive of all taxes.
+                        </h5>
+                    </div>
+                </div>
+                <div class="img" id="item12"><img src="image/img4.png" alt="">
+                    <h4 class="title">Waterproof Kajal<br>&#8377;320.00</h4><span>25% off</span>
+                    <div class="btn">
+                        <input type="button" value="Add To Cart" onclick="addToCart(item12)">
+                    </div>
+                    <div class="price">
+                        <h4>Waterproof Kajal</h4><br><br>
+                        <h5>&#8377; 320.00
+                            <br>
+                            Inclusive of all taxes.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="img" id="item13"><img src="image/img9.png" alt="">
+                    <h4 class="title">Incolor Blusing Cheeks<br>&#8377;275.00</h4><span>10% off</span>
+                    <div class="btn">
+                        <input type="button" value="Add To Cart" onclick="addToCart(item13)">
+                    </div>
+                    <div class="price">
+                        <h4>Blusing Cheeks</h4><br><br>
+                        <h5>&#8377; 275.00
+                            <br>
+                            Inclusive of all taxes.
+                        </h5>
+                    </div>
+                </div>
+                <div class="img" id="item14"><img src="image/img8.png" alt="">
+                    <h4 class="title">Lakme CC Cream<br>&#8377;499.00</h4><span>20% off</span>
+                    <div class="btn">
+                        <input type="button" value="Add To Cart" onclick="addToCart(item14)">
+                    </div>
+                    <div class="price">
+                        <h4>Lakme CC Cream</h4><br><br>
+                        <h5>&#8377; 499.00
+                            <br>
+                            Inclusive of all taxes.
+                        </h5>
+                    </div>
+                </div>
+                <div class="img" id="item15"><img src="image/img14.png" alt="">
+                    <h4 class="title">Sugar Cosmetics<br>&#8377;399.00</h4><span>35% off</span>
+                    <div class="btn">
+                        <input type="button" value="Add To Cart" onclick="addToCart(item15)">
+                    </div>
+                    <div class="price">
+                        <h4>Sugar Cosmetics</h4><br><br>
+                        <h5>&#8377; 399.00
+                            <br>
+                            Inclusive of all taxes.
+                        </h5>
+                    </div>
+                </div>
+                <div class="img" id="item16"><img src="image/img5.png" alt="">
+                    <h4 class="title">Coffee Face Mask<br>&#8377;299.00</h4><span>15% off</span>
+                    <div class="btn">
+                        <input type="button" value="Add To Cart" onclick="addToCart(item16)">
+                    </div>
+                    <div class="price">
+                        <h4>Coffee Face Mask</h4><br><br>
+                        <h5>&#8377; 299.00
+                            <br>
+                            Inclusive of all taxes.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <section id="review">
+
+        <div class="box"><img src="image/images2.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem consequuntur ipsa cum ab hic
+                accusantium nisi nobis aspernatur atque molestias?<br> ipsum dolor sit amet consectetur adipisicing
+                elit. Maxime alias assumenda reprehenderit atque officia rem?</p>
+        </div>
+        <div class="box"><img src="image/images1.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem consequuntur ipsa cum ab hic
+                accusantium nisi nobis aspernatur atque molestias?<br> ipsum dolor sit amet consectetur adipisicing
+                elit. Maxime alias assumenda reprehenderit atque officia rem?</p>
+        </div>
+        <div class="box"><img src="image/images3.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem consequuntur ipsa cum ab hic
+                accusantium nisi nobis aspernatur atque molestias?<br> ipsum dolor sit amet consectetur adipisicing
+                elit. Maxime alias assumenda reprehenderit atque officia rem?</p>
+        </div>
+
+
+
+    </section>
+
+
+    <footer>
+        <div class="box"><a href="#">Lorem ipsum.</a>
+            <br><br>
+            <a href="#">Lorem ipsum dolor.</a>
+            <br><br>
+            <a href="#">Lorem ipsum.</a>
+            <br><br>
+            <a href="#">Lorem.</a>
+            <br><br>
+            <a href="#">Lorem.</a>
+            <br><br>
+            <a href="#">Lorem ipsum dolor.</a>
+            <br><br>
+            <br><br>
+            <br>
+        </div>
+        <div class="box"><a href="#">Lorem ipsum.</a>
+            <br><br>
+            <a href="#">Lorem ipsum.</a>
+            <br><br>
+            <a href="#">Lorem ipsum dolor.</a>
+            <br><br>
+            <a href="#">Lorem ipsum.</a>
+            <br><br>
+            <a href="#">Lorem</a>
+            <br><br>
+            <a href="#">Lorem ipsum.</a>
+            <br><br>
+            <br><br>
+            <br>
+        </div>
+        <div class="box"><a href="#">Lorem ipsum.</a>
+            <br><br>
+            <a href="#">Lorem ipsum.</a>
+            <br><br>
+            <a href="#">Lorem ipsum dolor.</a>
+            <br><br>
+            <a href="#">Lorem ipsum.</a>
+            <br><br>
+            <a href="#">Lorem</a>
+            <br><br>
+            <a href="#">Lorem ipsum.</a>
+            <br><br>
+            <br><br>
+            <br>
+        </div>
+        <div class="main_box">
+            <div class="icon">
+                <a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="ground"> &#169; 2021-2022, Snetic.com, Inc. or its affiliates</div>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

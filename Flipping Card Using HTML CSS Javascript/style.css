@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(55deg, rgb(50, 252, 128), rgb(233, 11, 203));
+}
+
+.container
+{
+    width: 350px;
+    height: 500px;
+}
+.card{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+.front,
+.back{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    color: #fff;
+    backface-visibility: hidden;
+}
+.front{
+    background-image: url("https://source.unsplash.com/random/350x500");
+}
+.card.active{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.container.active > .card{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.back{
+    background: #3a3a3a;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.back p{
+    padding: 46px;
+}

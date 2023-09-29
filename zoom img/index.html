@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="search.png">
+    <title>Zoom Image</title>
+</head>
+<style>
+    *{
+        margin: 0;padding: 0;box-sizing: border-box;
+    }
+    body{
+        width: 100vw;height: 100vh;
+        display: flex;align-items: center;justify-content: center;
+        background: linear-gradient(to left, #000000,#6a27f9);
+    }
+    .container img{
+  max-width: 500px;
+  border: 6px solid white;
+}
+</style>
+<body>
+    
+    <div class="container">
+        <img src="pexels-eduardo-braga-1296720.jpg" alt="">
+    </div>
+</body>
+
+
+<script>
+     const zoomImg = document.querySelector('.container');
+     let zoom = 1;
+     zoomSpeed = 0.1;
+
+     document.addEventListener('wheel', (e)=>{
+        if(e.deltaY > 0){
+             zoomImg.style.transform = `scale(${(zoom += zoomSpeed)})`;
+        } else {
+        zoomImg.style.transform = `scale(${(zoom -= zoomSpeed)})`;
+        }
+     })
+</script>
+</html>

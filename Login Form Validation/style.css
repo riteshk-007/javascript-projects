@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(108, 97, 210);
+   
+}
+.container{
+    width: 350px;
+    height: 400px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 20px rgba(0,0,0, 0.8);
+    flex-direction: column;
+    position: relative;
+    border-radius: 7px;
+}
+h2{
+    position: absolute;
+    top: 30px;
+    width: 80%;
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    left: 37px;
+    font-weight: 700;
+    margin-top: -10px;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    width: 100%;
+}
+
+input{
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 7px;
+    background: rgb(241, 243, 240);
+    font-size: 15px;
+    margin-top: 30px;
+    width: 80%;
+    outline: none;
+    position: relative;
+}
+.message{
+    width: 80%;
+    height: 20px;
+    /* border: 1px solid #000; */
+    color: red;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 14px;
+    padding: 4px;
+}
+button{
+    padding: 15px;
+    border-radius: 7px;
+    font-size: 15px;
+    margin:  10px auto;
+    width: 80%;
+    background: rgb(108, 97, 210);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.eye{
+    position: absolute;
+    right: 50px;
+    width: 23px;
+    top: 48%;
+    cursor: pointer;
+}
+.eye img{
+    width: 100%;
+}

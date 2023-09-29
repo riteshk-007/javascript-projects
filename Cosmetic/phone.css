@@ -1,0 +1,385 @@
+@media screen and (max-width:1760px) {
+    #best .box .cards .img .price h5 {
+        font-size: 12px;
+    }
+    #best .btn{
+        position: absolute;
+        top: 155px;
+        left: 74px;
+    }
+    #best .btn input{
+        width: 40%;
+        font-size: 12px;
+    }
+    #best .box .cards .img .price h4{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:1400px) {
+    #best .box .cards .img span{
+        font-size: 70%;
+    }
+    #review .box img{
+        width: 15%;
+        margin: 10px;
+    }
+    #best .box{
+        width: 85%;
+        height: 38%;
+        transition: all 0.5s;
+    }
+    #best .btn{
+        position: absolute;
+        top: 129px;
+        left: 74px;
+    }
+    #best .btn input{
+        width: 35%;
+        font-size: 7px;
+    }
+    #best .box .cards {
+        position: relative;
+        width: 90%;
+        height: 87%;
+        
+    }
+    #best .box .cards .img .price h4 {
+        font-size: 12px;
+        padding: 2px;
+    }
+    .cart {
+        width: 200px;
+        height: 550px;
+        transition: all 0.5s;
+    }
+    .cartItem>img {
+        width: 100px;
+        margin: 5px 0;
+        transition: all 0.5s;
+
+    }
+}
+@media screen and (max-width:1280px) {
+    #review {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    #review .box{
+        width: auto;
+        flex-direction: column;
+        border-radius: 8px;
+    }
+    #review .box p {
+        margin:auto;
+        font-size: 50%;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 5px;
+        padding-bottom: 4px;
+    }
+    #review .box img {
+        width: 80%;
+        height: auto;
+        border-radius: 8px;
+        border: 2px solid rgb(230, 217, 217);
+        margin: auto;
+    }
+}
+@media screen and (max-width:1298px) {
+    #best .box .cards .img span {
+        font-size: 50%;
+    }
+}
+@media screen and (max-width:1130px) {
+    #category .box .card .btn input {
+        font-size: smaller;
+    }
+    #home .box .pera p {
+        font-size: .8rem;
+        letter-spacing: 1px;
+    }
+    #home .box .pera {
+        width: 55%;
+        padding: 5px;
+    }
+}
+@media screen and (max-width:1105px) {
+    #best .btn{
+        position: absolute;
+        top: 100px;
+        left: 50px;
+        transition: all 0.5s;
+    }
+    footer .main_box .ground {
+        font-size: 10px;
+    }
+    footer .main_box .icon a{
+        margin: 10px;
+        font-size: 15px;
+        transition: all 0.5s;
+    }
+    footer .box a {
+       font-size: 12px;
+       transition: all 0.5s;
+    }
+    #best .box .cards .img .price h5 {
+        font-size: 10px;
+    }
+    #best .box .cards {
+        position: relative;
+        width: 90%;
+        height: 75%;
+        
+    }
+    #best .box {
+        width: 82%;
+        height: 35%;
+        transition: all 0.5s;
+    }
+    
+}
+@media screen and (max-width:965px) {
+    #best .box .cards .img span {
+        font-size: 30%;
+    }
+    #best .box .cards .img .price h4 {
+        font-size: 10px;
+        padding: 3px;
+    }
+    #best .btn{
+        position: absolute;
+        top: 98px;
+        left: 40px;
+        transition: all 0.5s;
+    }
+    #best .btn input{
+        width: 35%;
+        font-size: 5px;
+        font-weight: bold;
+    }
+    #home .box .small_img .card p {
+        
+        font-size: 7px;
+       
+    }
+}
+@media screen and (max-width:876px) {
+    .menu ul {
+       display: none;
+       transition: all 0.4s;
+    }
+    .main-menu{
+        display: block;
+    }
+    .menu ul.phone{
+        display: flex;
+        transition: all 0.4s;
+    }
+    .logo span {
+        font-size: 18px;
+    }
+    .menu ul li {
+
+        font-size: 13px;
+
+    }
+    .menu ul{
+        /* border: 1px solid #000; */
+        position: absolute;
+        left: 0;
+        flex-direction: column;
+        top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 500px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 7px; 
+    }
+    .menu ul li a{
+        color: whitesmoke;
+        padding: 2px 5px;
+    }
+    .menu ul {
+        display: none;
+        transition: all 0.4s;
+     }
+    .menu .active {
+        padding: 6px;
+    }
+    #best .box .cards {
+        width: 95%;
+        height: 65%;
+        
+    }
+    #best .box .cards .img .price h5 {
+        font-size: 5px;
+    }
+    #best .box .cards .img .price h4 {
+        font-size: 6px;
+    }
+    #best .btn{
+        position: absolute;
+        top: 88px;
+        left: 40px;
+        transition: all 0.5s;
+    }
+    #best .btn input{
+        width: 35%;
+        font-size: 5px;
+        font-weight: bold;
+    }
+    #best .box .fa-solid {
+        font-size: 20px;
+    }
+    #best .box {
+        width: 85%;
+        height: 34%;
+        transition: all 0.5s;
+    }
+    
+}
+@media screen and (max-width:745px) {
+    #best .box {
+        width: 87%;
+        height: 30%;
+        transition: all 0.5s;
+    }
+    #best .box .cards {
+        width: 95%;
+        height: 65%;
+        
+    }
+    #best .btn{
+        position: absolute;
+        top: 80px;
+        left: 30px;
+        transition: all 0.5s;
+    }
+     .main-menu{
+         display: block;
+     }
+     .menu ul.phone{
+         display: flex;
+         transition: all 0.4s;
+     }
+  
+}
+@media screen and (max-width:665px) {
+    #home .box .pera p {
+        font-size: 0.5rem;
+        letter-spacing: 0px;
+    }
+    #category .box {
+        flex-direction: column;
+        width: 80%;
+        height: 90%;
+    }
+    footer .box a {
+        font-size: 8px;
+        transition: all 0.5s;
+    }
+    #category .box .card {
+       width: 100%;
+      margin: 15px 0px;
+    }
+    #best .box .cards {
+        width: 90%;
+        height: 75%;
+    }
+    #best .box {
+        width: 95%;
+        height: 30%;
+    }
+    #category .box .card .detail{
+        font-size: x-small;
+    }
+    #best .btn{
+        position: absolute;
+        top: 90px;
+        left: 25px;
+        transition: all 0.5s;
+    }
+    footer .main_box {
+        width: 100%;
+        height: 10%;
+    }
+    .login {
+        width: 80%;
+        height: 60%;
+    }
+    .login span {
+        font-size: 100%;
+    }
+    .login input {
+       width: 70%;
+       height: 10%;
+    }
+    .login button {
+        font-size: 15px;
+        width: 40%;
+    }
+    .login a {
+        margin-top: 10px;
+    }
+    .login .fa-solid {
+        top: -10px;
+        left: 95%;
+        font-size: 26px;
+    }
+    @media screen and (max-width:600px) {
+        #category .box .card .detail {
+            font-size: xx-small;
+        }
+        footer .main_box .ground {
+            font-size: 7px;
+        }
+    }
+}
+@media screen and (max-width:590px) {
+    #review {
+       
+        flex-direction: column;
+        margin: auto;
+    }    
+    #best .box .cards .img:last-child {
+       display: none
+    }
+    #best .box .cards .img{
+        width: 33%;
+    }
+    #category .box .card .btn input {
+        font-size: xx-small;
+    }
+    #best .btn input{
+        width: 40%;
+        font-size: 5px;
+        font-weight: bold;
+    }
+    .cart {
+        width: 150px;
+       
+    }
+    #home .box .small_img .card p {
+        
+        font-size: 3px;
+       
+    }
+}
+@media screen and (max-width:430px) {
+    footer .main_box .icon a{
+        font-size: 10px;
+        margin: 1px;
+    }
+    #home .box .pera p {
+        font-size: 5px;
+        letter-spacing: 0px;
+    }
+}
+@media screen and (max-width:300px) {
+    #best .box .cards .img:nth-child(3) {
+        display: none
+     }
+}

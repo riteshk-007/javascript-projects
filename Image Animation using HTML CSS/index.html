@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Animation using HTML CSS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="card">
+                <img src="/img/clark-wilson-mwzvQy6eNbs-unsplash.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="/img/marek-piwnicki-G_6kPyje9Lk-unsplash.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="img/mariano-baraldi-GDGvDHJX6aE-unsplash.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="img/siddhant-rane-qvnhF7iM8uw-unsplash.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="boxed">
+        <img src="" alt="">
+    </div>
+    <script>
+
+
+        let cards = document.querySelectorAll('.card img');
+
+        cards.forEach((element) =>{
+            element.addEventListener('click', ()=>{
+                // let img = document.createElement('img');
+                // img.setAttribute('src', element.src);
+                const boxed = document.querySelector('.boxed');
+                boxed.classList.add('active');
+                const view = boxed.querySelector('img');
+                    view.src = element.src;
+            })
+        })
+    </script>
+</body>
+</html>

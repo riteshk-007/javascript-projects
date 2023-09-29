@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: plum;
+}
+.container{
+    width: 700px;
+    height: 500px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    font-family: 'Mukta', sans-serif;
+    position: relative;
+}
+.container input{
+    width: 37%;
+    height:50px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    padding-left: 8px;
+}
+.container label{
+  margin: 0px 14px;
+  font-weight: 600;
+}
+.container .btn{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: purple;
+    color: #fff;
+    font-size: 19px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px 7px rgb(0 0 0 / 30%);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.container .btn:active{
+    transform: translateY(2px);
+}
+.result{
+    width: 100%;
+    background-color: #fff;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    flex-direction: column;
+}
+.total{
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    /* border: 1px solid #000; */
+    bottom: 40px;
+    z-index: 1;
+    left: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+}
+.head{
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    /* border: 1px solid #000; */
+    bottom: 40px;
+    z-index: 1;
+    right: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+}

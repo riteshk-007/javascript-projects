@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: darkblue;
+}
+.star{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+}
+.star input {
+    display: none;
+}
+
+.star label {
+    font-size: 30px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.star input:not(:checked)~label:hover,
+.star input:not(:checked)~label:hover~label {
+    color: #fd4;
+}
+
+.star input:checked~label {
+    color: #fd4;
+}
+.star input#rate_5:checked~label {
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+}

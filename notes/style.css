@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(45deg, rgb(18, 240, 18), rgb(0, 183, 255));
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.inputText{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    margin-top: 8px;
+    width: 80%;
+    height: 50px;
+    background: rgba(255,255,255, 0.5);
+    outline: none;
+    border: 1px solid #555;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+input::placeholder{
+    color: #555;
+    font-size: medium;
+}
+button{
+    width: 60px;
+    height: 45px;
+    background: linear-gradient(45deg, rgb(240, 18, 240), rgb(255, 166, 0));
+    color: #fff;
+    font-size: 16px;
+    margin-top: 6px;
+    margin-left: 2px;
+    outline: none;
+    border: #fff 2px solid;
+    cursor: pointer;
+}
+button:active{
+    transform: translateY(1px);
+}
+.content{
+    margin-top: 10px;
+    padding: 15px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+    height: 95vh;
+}
+.box{
+    width: 260px;
+    max-width: 260px;
+    height: 225px;
+    /* border: 1px solid #000; */
+    margin:   50px;
+    background: #fff;
+    box-shadow: 3px 0px 18px 4px rgb(0 0 0 / 50%);
+    border-radius: 7px;
+    position: relative;
+    text-transform: capitalize;
+}
+.text{
+    width: 100%;
+    height: 95%;
+    overflow-x: auto;
+    padding: 10px;
+}
+.menu{
+    width: 50%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 5px;
+    /* border: 1px solid #000; */
+    position: absolute;
+    right: 2px;
+    z-index: 2;
+}
+.toggle{
+    font-size: 30px;
+    cursor: pointer;
+    position: relative;
+}
+ul{
+    z-index: 1;
+    position: absolute;
+    background: #fdfdfd;
+    padding: 5px;
+    right: -85px;
+    bottom: -69px;
+    box-shadow: 3px 0px 18px 4px rgb(0 0 0 / 12%);
+    transition: .4s;
+    visibility: hidden;
+    opacity: 0;
+}
+ul li{
+    list-style: none;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+ul li:hover{
+    background: #e7e5e5;
+}
+ul li a{
+    margin-left: 9px;
+    color: #000;
+}
+ ul.active{
+    visibility: visible;
+    opacity: 1;
+}

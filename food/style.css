@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #f7f6f6;
+}
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    height: 10%;
+    /* box-shadow: 0px 5px 20px 0px rgb(0 0 0 / 10%); */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #f7f6f6;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 10px;
+}
+header .logo{
+    width: 20%;
+    /* border: 1px solid #000; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Rajdhani', sans-serif;
+}
+header .logo a{
+    text-decoration: none;
+    color: rgb(102, 134, 36);
+}
+header ul{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* border: 1px solid #000; */
+}
+header ul li{
+    margin: auto 25px;
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 18px;
+    color: rgb(106, 134, 49);
+    transition: all 0.3s;
+}
+header ul li a:hover{
+    color: rgb(179, 199, 138);
+}
+.first{
+    margin-top: 30px;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    padding: 10px;
+    /* flex-wrap: wrap; */
+}
+.first .contentBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #000; */
+    flex-direction: column;
+    font-family: 'Kanit', sans-serif;
+    padding: 20px;
+    overflow: hidden;
+}
+.first .contentBox:nth-child(1){
+    width: 50%;
+    height: 100%;
+}
+.first .contentBox:nth-child(2){
+    min-width: 36%;
+    height: 88%;
+    margin-left: 103px;
+}
+.first .contentBox p{
+    padding: 100px;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+.first .contentBox button{
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 3px solid rgb(106, 134, 49);
+    border-radius: 50px;
+     box-shadow: 0px 0px 20px 5px rgb(0 0 0 / 10%);
+     font-weight: 600;
+     transition: all 0.2s;
+}
+.first .contentBox button:active{
+    transform: translatey(2px);
+}
+.first .contentBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* background: rgba(100, 133, 35, 0.404); */
+    border-radius: 20px;
+}
+.second{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.wrapper{
+    width: 95%;
+    height: 33vh;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    overflow-y: visible;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    position: relative;
+    z-index: 0;
+}
+.wrapper::-webkit-scrollbar{
+    display: none;
+}
+.second .wrapper .card{
+    width: 230px;
+    height: 95%;
+    min-width: 200px;
+    /* border: 1px solid #000; */
+    margin-left: 30px;
+    cursor: pointer;
+    box-shadow: 0px 0px 30px rgb(0 0 0 / 10%);
+    position: relative;
+    border-radius: 7px;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+.second .wrapper .card p{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background: rgba(106, 134, 49, 0.616);
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    padding: 8px;
+    font-size: 11px;
+    font-family: sans-serif;
+    cursor:auto;
+}
+.second .wrapper .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.second .wrapper .card:hover{
+    transform: scale(1.05);
+}
+.second button{
+    position: absolute;
+    height: 33vh;
+    border: 1px solid #000;
+    width: 50px;
+    background:#fff;
+    font-size: 25px;
+    color: #000;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.second .next{
+    right: 8px;
+    box-shadow: -20px 0px 20px 20px rgb(255 255 255);
+}
+.second .pre{
+    left: 8px;
+    box-shadow: 20px 0px 20px 20px rgb(255 255 255);
+}
+.container{
+    width: 800px;
+    height: 500px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 30px rgb(0 0 0 / 15%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.container img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .detail {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Rajdhani', sans-serif;
+    flex-direction: column;
+}
+.container .detail h5{
+    margin-top: 50px;
+    padding: 0px 50px;
+    color: #333;
+}
+.container .detail span{
+    color: #222;
+    font-size: 18px;
+}
+.container.show{
+    display: flex;
+}
+.container ion-icon{
+    position: absolute;
+    font-size: 30px;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+.container .detail button{
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    background:  rgb(102, 134, 36);
+    padding: 7px 14px;
+    border-radius: 20px;
+    color: #fff;
+    height: 40px;
+    font-size: 14px;
+    width: 100px;
+    cursor: pointer;
+    box-shadow: 0px 0px 11px 2px rgb(0 0 0 / 20%);
+}
+.cart{
+    background: rgb(102, 134, 36);
+    color: #f7f6f6;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 20px 2px rgb(0 0 0 / 20%);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: 'Rajdhani', sans-serif;
+}
+.cart ion-icon{
+    font-size: 25px;
+    margin-right: 10px;
+    font-weight: 700;
+}
+.third{
+    width: 100vw;
+    padding: 100px;
+    height: 100vh;
+    position: fixed;
+    right: 100%;
+    top: 0;
+    background: #00000069;
+    transition: all 0.3s ease-in-out;
+}
+.third.active{
+    right: 0;
+}
+.cart-item{
+    width: 20vw;
+    padding: 10px;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #f7f6f6;
+    font-family: 'Rajdhani', sans-serif;
+}
+.cart-item h2{
+    margin-top: 10px;
+    font-size: 30px;
+    margin-left: 16px;
+}
+.cart-item ion-icon{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 30px;
+    cursor: pointer;
+}
+/* .cart ion-icon:hover{
+    transform: rotate(45deg) rotate(-45deg);
+} */
+.product{
+    width: 100%;
+    height: 90%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-y: auto;
+    position: relative;
+}
+.product-item{
+    width: 100%;
+    height: 100px;
+    min-height: 100px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    margin: 5px auto;
+}
+.product-item img{
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+
+}
+.product-item span{
+    font-size: 10px;
+    width: 113px;
+    /* border: 1px solid #000; */
+    letter-spacing: 1px;
+    font-weight: 100;
+    margin-left: 10px;
+}
+.product button{
+    position: fixed;
+    bottom: 15px;
+    width: 18%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(106, 134, 49);
+    border-radius: 7px;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+    cursor: pointer;
+    padding: 25px;
+}
+.product button .items,.product button span,.product button a{
+    color: #fff;
+    font-size: 15px;
+}
+.product button ion-icon{
+    font-size: 18px;
+   position: absolute;
+   right: 5px;
+   top: 34%;
+}
+.product .box{
+    width: 100px;
+    height: 40px;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(100, 136, 29);
+    color: #f7f6f6;
+    border-radius: 6px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+}
+.product .box .remove, .display, .add{
+    width: 33px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product .box .remove, .add{
+    font-size: 30px;
+    font-weight: 100;
+    cursor: pointer;
+}
+.delete{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(160, 3, 3);
+    color: #fff;
+    cursor: pointer;
+}

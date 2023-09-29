@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="phn.css">
+    <title>DJ</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="header">
+            <div class="logo">
+                <img src="/image/logo.png" alt="">
+            </div>
+           <div class="boxed" id="boxed">
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">playlist</a></li>
+                </ul>
+
+            </div>
+            <div class="search">
+                <input type="search" placeholder="music...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="user">
+                <i class="fa-solid fa-moon" onclick="mode()" id="theme"></i>
+            </div>
+           
+        </div>
+        <div class="burger" id="burger" onclick="menu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        </div>
+
+
+        <div class="left-box" id="left">
+            <div class="box" id="ab"><audio src="/music/song1.mp3" id="mp1"></audio><div class="left-side"><img src="/img1.jpg" alt="music.."><h2>Pyaar Pyaar</h2></div><div class="btn"><i class="fa-solid fa-play" id="one" title="play"></i></div></div>
+            <div class="box" id="bc"><audio src="music/song3.mp3" id="mp2"></audio><div class="left-side"><img src="/img2.jpg" alt="music.."><h2>Liggi</h2></div><div class="btn"><i class="fa-solid fa-play" id="two" title="play"></i></div></div>
+            <div class="box" id="cd"><audio src="/music/Bhool Bhulaiyaa 2.mp3" id="mp3"></audio><div class="left-side"><img src="/img3.jpg" alt="music.."><h2>Bhool Bhulaiyaa 2</h2></div><div class="btn"><i class="fa-solid fa-play" id="three" title="play"></i></div></div>
+            <div class="box" id="de"><audio src="/music/Karuppu-Vellai.mp3" id="mp4"></audio><div class="left-side"><img src="/img4.jpg" alt="music.."><h2>Karuppa Vellai</h2></div><div class="btn"><i class="fa-solid fa-play" id="four" title="play"></i></div></div>
+            <div class="box" id="ef"><audio src="/music/Lover.mp3" id="mp5"></audio><div class="left-side"><img src="/img5.jpg" alt="music.."><h2>Lover</h2></div><div class="btn"><i class="fa-solid fa-play" id="five" title="play"></i></div></div>
+            <div class="box" id="fg"><audio src="/music/song2.mp3" id="mp6"></audio><div class="left-side"><img src="/img6.jpg" alt="music.."><h2>Excuses</h2></div><div class="btn"><i class="fa-solid fa-play" id="six" title="play"></i></div></div>
+            <div class="box" id="gh"><audio src="/music/Ra Ra Rakkamma.mp3" id="mp7"></audio><div class="left-side"><img src="/img7.jpg" alt="music.."><h2>Ra Ra Rakkamma</h2></div><div class="btn"><i class="fa-solid fa-play" id="seven" title="play"></i></div></div>
+        </div>
+        
+
+
+        <div class="slider">
+            <!-- <div class="icon"><i class="fa-solid fa-play"></i></div> -->
+            <div class="slide active" id="slide1"><img src="/img1.jpg" alt="music.."><h2>Pyaar Pyaar</h2></div>
+            <div class="slide" id="slide2"><img src="/img2.jpg" alt="music.."><h2>Liggi</h2></div>
+            <div class="slide" id="slide3"><img src="/img3.jpg" alt="music.."><h2>Bhool Bhulaiyaa 2</h2></div>
+            <div class="slide" id="slide4"><img src="/img4.jpg" alt="music.."><h2>Karuppa Vellai</h2></div>
+            <div class="slide" id="slide5"><img src="/img5.jpg" alt="music.."><h2>Lover</h2></div>
+            <div class="slide" id="slide6"><img src="/img6.jpg" alt="music.."><h2>Excuses</h2></div>
+            <div class="slide" id="slide7"><img src="/img7.jpg" alt="music.."><h2>Ra Ra Rakkamma</h2></div>
+            <div class="slide" id="slide8"><img src="/img8.jpg" alt="music.."><audio src="/music/Track El Mousem تراك الموسم.mp3" id="mp8"></audio><h2>Track El Mousem</h2></div>
+            <div class="slide" id="slide9"><img src="/img9.jpg" alt="music.."><audio src="/music/Maine Tujhe Dekha Haste Hue.mp3" id="mp9"></audio><h2>Maine Tujhe Dekha  Haste Hue</h2></div>
+            <div class="slide" id="slide10"><img src="/img10.jpg" alt="music.."><audio src="/music/song6.mp3" id="mp10"></audio><h2>The Monster Song</h2></div>
+        </div>
+        <div class="btn-right" id="next" title="Next"><i class="fa-solid fa-circle-right"></i></div>
+        <div class="btn-left" id="pre" title="Previous"><i class="fa-solid fa-circle-left"></i></div>
+
+
+        <div class="img_box" id="size">
+                <div class="img1" id="img1"><img src="img1.jpg" alt="music..."></div>
+                <div class="img2" id="img2"><img src="img2.jpg" alt="music..."></div>
+                <div class="img3" id="img3"><img src="img3.jpg" alt="music..."></div>
+                <div class="img4" id="img4"><img src="img4.jpg" alt="music..."></div>
+                <div class="img5" id="img5"><img src="img5.jpg" alt="music..."></div>
+                <div class="img6" id="img6"><img src="img6.jpg" alt="music..."></div>
+                <div class="img7" id="img7"><img src="img7.jpg" alt="music..."></div>
+                <div class="img8" id="img8"><img src="img8.jpg" alt="music..."></div>
+                <div class="img9" id="img9"><img src="img9.jpg" alt="music..."></div>
+                <div class="img10" id="img10"><img src="img10.jpg" alt="music..."></div>
+         </div>
+
+
+         <div class="control">
+            <i class="fa-solid fa-backward" id="back" title="previous"></i>
+            <i class="fa-solid fa-play" id="play" title="play"></i>
+            <i class="fa-solid fa-forward" id="nxt" title="next"></i>
+         </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

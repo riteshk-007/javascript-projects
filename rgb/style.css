@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    background-color: #fff;
+    width: 400px;
+    height: auto;
+    padding: 25px 10px;
+    box-shadow: 10px 20px 30px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    position: relative;
+}
+.wrapper{
+    width: 100%;
+    margin: 25px 0px;
+}
+.wrapper input{
+    width: 90%;
+}
+span{
+    background: rgb(0, 119, 255);
+    padding: 8px 15px;
+    position: absolute;
+    left: 30%;
+    bottom: 5%;
+    letter-spacing: 2px;
+    color: #fff;
+}
+span::selection{
+    background: rgb(240, 103, 103);
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="color-palette.png">
+    <title>Drawing javascript</title>
+</head>
+<body>
+
+    <div id="paintArea">
+        <canvas id="canvas"></canvas>
+    </div>
+    <div class="options">
+        <div class="tools" id="tool-section">
+            <div class="tools-row">
+                <div class="tools-wrapper">
+                    <h5><span id="tool-type"></span>Size : </h5>
+                    <input type="range" id="pen-slider" value="1" min="1"  max="50">
+                    <h3>1</h3>
+                </div>
+                <div class="tools-wrapper">
+                    <h5>Color :</h5>
+                    <input type="color" id="color">
+                </div>
+            </div>
+            <div class="tools-row">
+                <button id="Clearbtn">Clear</button>
+                <button id="save">Save Art</button>
+                <button id="erasebtn">Erase</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

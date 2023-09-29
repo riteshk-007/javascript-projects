@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>	Simple Countdown Timer HTML CSS JavaScript </title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #333;
+    }
+    .Countdown{
+        width: 400px;
+        height: 300px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 100px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+</style>
+<body>
+    <div class="Countdown">10:00</div>
+
+    
+
+    <script>
+
+        "use string"
+        let starting = 10;
+        let time = starting * 60;
+
+        let countdown = document.querySelector('.Countdown');
+
+        setInterval(timeupdate, 1000)
+        function timeupdate(){
+            const minutes = Math.floor(time / 60);
+            const second = time % 60;
+
+            if(second < 10){
+                countdown.innerHTML = `${minutes}:0${second}`;
+            }else{
+
+                countdown.innerHTML = `${minutes}:${second}`;
+            }
+            time--;
+        }
+
+    </script>
+</body>
+</html>

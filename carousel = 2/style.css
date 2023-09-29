@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(45deg, rgb(236, 156, 156), rgb(154, 154, 250));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    width: 80vw;
+    height: 500px;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    overflow-y: visible;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    border-radius: 30px;
+    box-shadow: inset 0px 1px 29px rgba(0,0,0,0.4);
+    position: relative;
+    z-index: 0;
+}
+.container::-webkit-scrollbar{
+    display: none;
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    /* border-radius: 100%; */
+    font-size: 30px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    height: 500px;
+    z-index: 1;
+    position: absolute;
+    transition: all 0.4s;
+}
+#nxt{
+    right: 192px;
+    border-radius: 0px 30px 30px 0px;
+    box-shadow:  -20px 0px 19px 7px #ffffff9c;
+}
+#back{
+    border-radius: 30px 0px 0px 30px;
+    left: 192px;
+    box-shadow:  20px 0px 19px 7px #ffffff9c;
+}
+button:active{
+    background: rgba(0,0,0,0.8);
+}
+.card{
+    width: 36vw;
+    height: 90%;
+    box-shadow:  0px 10px 20px rgba(0,0,0,0.4);
+    margin-left: 50px;
+    min-width: 36vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card span{
+    font-size: 100px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #d8f1f3;
+    text-transform: capitalize;
+}
+.navbar{
+    width: 90px;
+    height: 100vh;
+    /* border: 1px solid #000; */
+    box-shadow: 1px 10px 20px 0px rgba(0, 0, 0, 0.5);
+    background: #000000ad;
+    border-radius: 5px;
+    transition: 0.5s;
+    overflow: hidden;
+    position: relative;
+}
+.navbar.active h4{
+   display: block;
+}
+.navbar.active {
+    width: 300px;
+}
+
+.logo{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+    background: #555;
+    position: relative;
+} 
+.logo ion-icon{
+    font-size: 30px;
+    position: absolute;
+    left: 30px;
+}
+h4{
+    display: none;
+}
+ul{
+   width: 100%;
+   height: 80%;
+   /* border: 1px solid #000; */
+   display: block;
+   padding: 10px;
+}
+ ul li{
+    list-style: none;
+    padding: 25px;
+    /* border: 1px solid #000; */
+    border-radius: 14px;
+    cursor: pointer;
+    margin: 60px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(85, 85, 85, 0.986);
+    transition: all 0.3s ease;
+ }
+ ul.active a{
+    display: block;
+    transition: all 0.4s;
+ }
+ ul li:hover{
+    background: #ccc;
+ }
+ ul li:hover a{
+    color: #555;
+ }
+ ul li ion-icon{
+    font-size: 25px;
+    color: #ccc;
+ }
+ ul li:hover ion-icon{
+    color: #555;
+ }
+ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 10px;
+    color: #Ccc;
+    font-weight: 500;
+    display: none;
+}
+.toggle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(85, 85, 85, 0.863);
+    height: 120px;
+}
+.toggle label{
+    padding: 0 20px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    display: none;
+}
+.toggle input{
+    appearance: none;
+    width: 40px;
+    /* border: 1px solid #000; */
+    height: 20px;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    transition: all 0.4s;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: -2px;
+}
+.toggle input:checked[type="checkbox"]{
+    background: #03a9f4;
+}
+.toggle input[type="checkbox"]::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transform:  scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: left 0.5s;
+}
+.toggle  input:checked[type="checkbox"]::before{
+    left: 20px;
+}
+.toggle label ion-icon{
+    margin-bottom: -3px;
+    margin-right: 5px;
+}
+.toggle.active label{
+    display: block;
+}
+.navbar.active1{
+    background: #ffffff;
+}
+.logo.active1{
+    background: #c0c0c0;
+    color: rgb(31, 31, 31);
+}
+.toggle.active1{
+    background: #c0c0c0;
+}
+.toggle.active1 label{
+    color: #000;
+}
+ul.active1 li {
+    background:#03a8f4d8;
+}
+ul.active1 li a{
+    color: #000;
+}
+ul.active1 li ion-icon{
+    color: #000;
+ }
+ ul.active1 li:hover{
+    background: #0867d4d8;
+ }

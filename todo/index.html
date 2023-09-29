@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo list</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 500px;
+    height: auto;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    flex-direction: column;
+}
+.container input{
+    width: 80%;
+    height: 30px;
+    margin: auto 7px;
+    font-size: 16px;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+.container button{
+    width: 40px;
+    height: 25px;
+    border: 2px solid rgb(228, 10, 10);
+    background-color: rgb(255, 0, 191);
+    color: #fff;
+    font-size: 15px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.box1{
+    width: 100%;
+    /* border: 1px solid #000; */
+}
+.box{
+    width: 100%;
+    border: 1px solid #000;
+    margin: 15px auto;
+    padding: 5px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card{
+    width: 80%;
+    /* border: 1px solid #000; */
+    height: 100%;
+    text-transform: capitalize;
+}
+.box .check{
+    width: 19px;
+    cursor: pointer;
+}
+.card.active{
+    text-decoration: line-through;
+}
+.box .trash{
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+}
+.box .trash:active{
+    color: rgb(165, 6, 6);
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="box1">
+            <input type="text" id="inputval">
+            <button id="btn">Add</button>
+        </div>
+        
+        <!-- <div class="box">
+            <div class="card"></div>
+            <input type="checkbox" class="check">
+            <ion-icon name="trash-outline" class="trash"></ion-icon>
+        </div> -->
+        
+    </div>
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+    var btn = document.querySelector('#btn');
+    var container = document.querySelector('.container'); 
+
+    btn.addEventListener('click',()=>{
+        // event.preventDefault;
+        var box = document.createElement('div');
+        var card = document.createElement('div');
+        var check = document.createElement('i')
+        var trash = document.createElement('i')
+        box.appendChild(card)
+        card.append(document.querySelector('#inputval').value);
+        container.appendChild(box)
+        check.innerHTML = '<input type="checkbox" class="check">';
+        trash.innerHTML = '<ion-icon name="trash-outline" class="trash"></ion-icon>';
+        box.appendChild(check)
+        box.appendChild(trash)
+
+        box.className = "box";
+        card.className = "card";
+            trash.addEventListener('click',()=>{
+                box.parentNode.removeChild(box)
+            })
+    
+        check.addEventListener('input',()=>{
+            card.classList.toggle('active');
+        })
+        document.querySelector('#inputval').value = " ";
+    });
+    
+ 
+
+</script>
+</body>
+</html>
